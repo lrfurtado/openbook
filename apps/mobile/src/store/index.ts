@@ -20,7 +20,9 @@ export const store = configureStore({
     ),
 });
 
-export const persistor = persistStore(store);
+// Started by the root layout once this tab owns the local database (see lib/tabLock).
+// `manualPersist` is supported at runtime but missing from redux-persist's type definitions.
+export const persistor = persistStore(store, { manualPersist: true } as never);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

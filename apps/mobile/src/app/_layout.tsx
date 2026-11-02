@@ -6,9 +6,10 @@ import { Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { Loading } from '@/components/ui';
+import { Button, Loading } from '@/components/ui';
 import { useRollover } from '@/hooks/useRollover';
 import { getDb } from '@/lib/db';
+import { claimTab, takeOver, type TabState } from '@/lib/tabLock';
 import { persistor, store } from '@/store';
 
 function DbGate({ children }: { children: React.ReactNode }) {
@@ -32,16 +33,48 @@ function DbGate({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
 
+/** Web: only one tab may own the local database; others offer to take over instead of failing. */
+function TabGate({ children }: { children: React.ReactNode }) {
+  const [state, setState] = useState<TabState | 'loading'>('loading');
+  const [busy, setBusy] = useState(false);
+  useEffect(() => {
+    claimTab().then((s) => {
+      if (s === 'ok') persistor.persist();
+      setState(s);
+    });
+  }, []);
+  if (state === 'loading') return <Loading />;
+  if (state === 'busy') {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24, gap: 12 }}>
+        <Text style={{ fontSize: 18, fontWeight: '700', textAlign: 'center' }}>{i18n.t('errors.otherTab')}</Text>
+        <Text style={{ textAlign: 'center' }}>{i18n.t('errors.otherTabBody')}</Text>
+        <Button
+          title={i18n.t('errors.useHere')}
+          loading={busy}
+          onPress={() => {
+            setBusy(true);
+            takeOver();
+          }}
+        />
+      </View>
+    );
+  }
+  return <>{children}</>;
+}
+
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <Provider store={store}>
-        <PersistGate loading={<Loading />} persistor={persistor}>
-          <DbGate>
-            <StatusBar style="auto" />
-            <Stack screenOptions={{ headerShown: false, animation: 'fade' }} />
-          </DbGate>
-        </PersistGate>
+        <TabGate>
+          <PersistGate loading={<Loading />} persistor={persistor}>
+            <DbGate>
+              <StatusBar style="auto" />
+              <Stack screenOptions={{ headerShown: false, animation: 'fade' }} />
+            </DbGate>
+          </PersistGate>
+        </TabGate>
       </Provider>
     </SafeAreaProvider>
   );

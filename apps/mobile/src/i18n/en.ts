@@ -372,6 +372,9 @@ const en = {
   },
   errors: {
     db: 'Could not open the local database.',
+    otherTab: 'OpenBook is open in another tab',
+    otherTabBody: 'Your books and cards live in one place on this device, so only one tab can use them at a time.',
+    useHere: 'Use it here',
   },
 };
 
