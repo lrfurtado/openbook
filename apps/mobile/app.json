@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "OpenBook",
+    "slug": "openbook",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.openbook.mobile",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Choose photos to make your own flash cards and books.",
+        "NSCameraUsageDescription": "Take photos to make your own flash cards and books."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "app.openbook.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro",
+      "name": "OpenBook",
+      "shortName": "OpenBook",
+      "themeColor": "#D0021B",
+      "backgroundColor": "#FFFFFF"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "headers": {
+            "Cross-Origin-Embedder-Policy": "credentialless",
+            "Cross-Origin-Opener-Policy": "same-origin"
+          }
+        }
+      ],
+      "expo-sqlite",
+      "expo-image",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose photos to make your own flash cards and books.",
+          "cameraPermission": "Take photos to make your own flash cards and books."
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ],
+      "expo-notifications"
+    ],
+    "scheme": "openbook",
+    "extra": {
+      "apiUrl": "http://localhost:3000/v1"
+    }
+  }
+}

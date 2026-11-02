@@ -1,0 +1,703 @@
+{
+  "categories": [
+    {
+      "slug": "nature-science",
+      "name": "Nature & Science",
+      "subcategories": [
+        {
+          "slug": "animals",
+          "name": "Animals"
+        },
+        {
+          "slug": "birds",
+          "name": "Birds"
+        },
+        {
+          "slug": "trees",
+          "name": "Trees"
+        },
+        {
+          "slug": "flowers",
+          "name": "Flowers"
+        },
+        {
+          "slug": "rocks",
+          "name": "Rocks"
+        },
+        {
+          "slug": "constellations",
+          "name": "Constellations"
+        },
+        {
+          "slug": "human-anatomy",
+          "name": "Human Anatomy"
+        }
+      ]
+    },
+    {
+      "slug": "everyday-objects",
+      "name": "Everyday Objects",
+      "subcategories": [
+        {
+          "slug": "musical-instruments",
+          "name": "Musical Instruments"
+        },
+        {
+          "slug": "tools",
+          "name": "Tools"
+        },
+        {
+          "slug": "vehicles",
+          "name": "Vehicles"
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "key": "birds-1",
+      "category": "nature-science",
+      "subcategory": "birds",
+      "title": "Birds of the World 1",
+      "description": "Twenty-two striking birds from around the world.",
+      "cards": [
+        {
+          "wiki": "Bald eagle",
+          "name": "Bald Eagle",
+          "facts": [
+            "The bald eagle lives in North America.",
+            "Bald eagles build some of the biggest nests of any bird."
+          ]
+        },
+        {
+          "wiki": "Atlantic puffin",
+          "name": "Puffin",
+          "facts": [
+            "The puffin has a bright orange beak.",
+            "Puffins dive underwater to catch small fish."
+          ]
+        },
+        {
+          "wiki": "American flamingo",
+          "name": "Flamingo",
+          "facts": [
+            "The flamingo is pink.",
+            "Flamingos get their pink color from the food they eat."
+          ]
+        },
+        {
+          "wiki": "Emperor penguin",
+          "name": "Emperor Penguin",
+          "facts": [
+            "The emperor penguin lives in Antarctica.",
+            "The emperor penguin is the tallest penguin."
+          ],
+          "file": "Empereur se gratte.jpg"
+        },
+        {
+          "wiki": "Barn owl",
+          "name": "Barn Owl",
+          "facts": [
+            "The barn owl hunts at night.",
+            "Barn owls have a heart-shaped face."
+          ]
+        },
+        {
+          "wiki": "Indian peafowl",
+          "name": "Peacock",
+          "facts": [
+            "The peacock has a long, colorful tail.",
+            "A peacock spreads its tail feathers like a fan."
+          ]
+        },
+        {
+          "wiki": "Toco toucan",
+          "name": "Toucan",
+          "facts": [
+            "The toucan has a very big beak.",
+            "Toucans live in South America."
+          ]
+        },
+        {
+          "wiki": "Ruby-throated hummingbird",
+          "name": "Hummingbird",
+          "facts": [
+            "The hummingbird is very small.",
+            "Hummingbirds can fly backwards."
+          ],
+          "file": "Archilochus colubris (Male).jpg"
+        },
+        {
+          "wiki": "Mallard",
+          "name": "Mallard Duck",
+          "facts": [
+            "The mallard is a duck.",
+            "The male mallard has a shiny green head."
+          ]
+        },
+        {
+          "wiki": "Common ostrich",
+          "name": "Ostrich",
+          "facts": [
+            "The ostrich is the biggest bird.",
+            "Ostriches cannot fly, but they run very fast."
+          ]
+        },
+        {
+          "wiki": "Blue jay",
+          "name": "Blue Jay",
+          "facts": [
+            "The blue jay has blue feathers.",
+            "Blue jays like to eat acorns."
+          ]
+        },
+        {
+          "wiki": "Northern cardinal",
+          "name": "Cardinal",
+          "facts": [
+            "The male cardinal is bright red.",
+            "Cardinals have a crest of feathers on their head."
+          ]
+        },
+        {
+          "wiki": "Common kingfisher",
+          "name": "Kingfisher",
+          "facts": [
+            "The kingfisher catches fish.",
+            "Kingfishers dive straight into the water."
+          ],
+          "file": "Common Kingfisher Alcedo atthis.jpg"
+        },
+        {
+          "wiki": "Brown pelican",
+          "name": "Pelican",
+          "facts": [
+            "The pelican has a pouch under its beak.",
+            "Pelicans scoop up fish with their pouch."
+          ]
+        },
+        {
+          "wiki": "Mute swan",
+          "name": "Swan",
+          "facts": [
+            "The swan has a long neck.",
+            "Baby swans are called cygnets."
+          ]
+        },
+        {
+          "wiki": "European robin",
+          "name": "Robin",
+          "facts": [
+            "The robin has an orange chest.",
+            "Robins sing even in winter."
+          ]
+        },
+        {
+          "wiki": "Pileated woodpecker",
+          "name": "Woodpecker",
+          "facts": [
+            "The woodpecker pecks holes in trees.",
+            "Woodpeckers find insects under tree bark."
+          ]
+        },
+        {
+          "wiki": "Scarlet macaw",
+          "name": "Macaw",
+          "facts": [
+            "The macaw is a parrot.",
+            "Macaws can live for more than fifty years."
+          ]
+        },
+        {
+          "wiki": "Snowy owl",
+          "name": "Snowy Owl",
+          "facts": [
+            "The snowy owl is white.",
+            "Snowy owls live in cold places in the Arctic."
+          ]
+        },
+        {
+          "wiki": "Chicken",
+          "name": "Chicken",
+          "facts": [
+            "The chicken lays eggs.",
+            "A male chicken is called a rooster."
+          ],
+          "file": "Rooster portrait, France.jpg"
+        },
+        {
+          "wiki": "Herring gull",
+          "name": "Seagull",
+          "facts": [
+            "The seagull lives near the sea.",
+            "Seagulls eat fish and many other foods."
+          ],
+          "file": "American Herring Gull, Brooklyn Army Terminal (01813).jpg"
+        },
+        {
+          "wiki": "Greater roadrunner",
+          "name": "Roadrunner",
+          "facts": [
+            "The roadrunner runs fast.",
+            "Roadrunners live in the desert."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "animals-1",
+      "category": "nature-science",
+      "subcategory": "animals",
+      "title": "Wild Animals 1",
+      "description": "Big and small mammals from every continent.",
+      "cards": [
+        {
+          "wiki": "African bush elephant",
+          "name": "Elephant",
+          "facts": [
+            "The elephant has a long trunk.",
+            "Elephants are the biggest animals on land."
+          ]
+        },
+        {
+          "wiki": "Giraffe",
+          "name": "Giraffe",
+          "facts": [
+            "The giraffe has a very long neck.",
+            "Giraffes are the tallest animals in the world."
+          ],
+          "file": "Three giraffes 01.jpg"
+        },
+        {
+          "wiki": "Lion",
+          "name": "Lion",
+          "facts": [
+            "The lion is a big cat.",
+            "Lions live together in groups called prides."
+          ]
+        },
+        {
+          "wiki": "Tiger",
+          "name": "Tiger",
+          "facts": [
+            "The tiger has stripes.",
+            "No two tigers have the same stripes."
+          ]
+        },
+        {
+          "wiki": "Plains zebra",
+          "name": "Zebra",
+          "facts": [
+            "The zebra has black and white stripes.",
+            "Zebras live in Africa."
+          ]
+        },
+        {
+          "wiki": "Hippopotamus",
+          "name": "Hippopotamus",
+          "facts": [
+            "The hippopotamus loves water.",
+            "Hippos spend most of the day in rivers and lakes."
+          ]
+        },
+        {
+          "wiki": "White rhinoceros",
+          "name": "Rhinoceros",
+          "facts": [
+            "The rhinoceros has horns on its nose.",
+            "Rhinos eat grass and leaves."
+          ]
+        },
+        {
+          "wiki": "Western gorilla",
+          "name": "Gorilla",
+          "facts": [
+            "The gorilla is a big ape.",
+            "Gorillas live in forests in Africa."
+          ]
+        },
+        {
+          "wiki": "Cheetah",
+          "name": "Cheetah",
+          "facts": [
+            "The cheetah runs very fast.",
+            "The cheetah is the fastest animal on land."
+          ]
+        },
+        {
+          "wiki": "Giant panda",
+          "name": "Panda",
+          "facts": [
+            "The panda is black and white.",
+            "Pandas eat bamboo."
+          ]
+        },
+        {
+          "wiki": "Red kangaroo",
+          "name": "Kangaroo",
+          "facts": [
+            "The kangaroo hops.",
+            "A mother kangaroo carries her baby in a pouch."
+          ],
+          "file": "Osphranter rufus - Tierpark Hagenbeck 01.jpg"
+        },
+        {
+          "wiki": "Koala",
+          "name": "Koala",
+          "facts": [
+            "The koala lives in trees.",
+            "Koalas eat eucalyptus leaves."
+          ],
+          "file": "Koala in Zoo Duisburg.jpg"
+        },
+        {
+          "wiki": "Polar bear",
+          "name": "Polar Bear",
+          "facts": [
+            "The polar bear lives on the ice.",
+            "Polar bears are very good swimmers."
+          ],
+          "file": "Polar bear (Ursus maritimus) in the drift ice region north of Svalbard.jpg"
+        },
+        {
+          "wiki": "Brown bear",
+          "name": "Brown Bear",
+          "facts": [
+            "The brown bear is big and strong.",
+            "Brown bears sleep through most of the winter."
+          ]
+        },
+        {
+          "wiki": "Wolf",
+          "name": "Wolf",
+          "facts": [
+            "The wolf howls.",
+            "Wolves live and hunt in packs."
+          ]
+        },
+        {
+          "wiki": "Red fox",
+          "name": "Fox",
+          "facts": [
+            "The fox has a bushy tail.",
+            "Foxes can hear very quiet sounds."
+          ]
+        },
+        {
+          "wiki": "Moose",
+          "name": "Moose",
+          "facts": [
+            "The moose has big antlers.",
+            "The moose is the largest kind of deer."
+          ]
+        },
+        {
+          "wiki": "Dromedary",
+          "name": "Camel",
+          "facts": [
+            "The camel has a hump.",
+            "Camels can go a long time without water."
+          ]
+        },
+        {
+          "wiki": "Chimpanzee",
+          "name": "Chimpanzee",
+          "facts": [
+            "The chimpanzee is an ape.",
+            "Chimpanzees use sticks as tools."
+          ]
+        },
+        {
+          "wiki": "Brown-throated sloth",
+          "name": "Sloth",
+          "facts": [
+            "The sloth moves very slowly.",
+            "Sloths hang upside down in trees."
+          ]
+        },
+        {
+          "wiki": "European hedgehog",
+          "name": "Hedgehog",
+          "facts": [
+            "The hedgehog has spines.",
+            "A hedgehog rolls into a ball to stay safe."
+          ]
+        },
+        {
+          "wiki": "Eastern gray squirrel",
+          "name": "Squirrel",
+          "facts": [
+            "The squirrel climbs trees.",
+            "Squirrels bury nuts to eat later."
+          ],
+          "file": "Grey squirrel (Sciurus carolinensis) 02.jpg"
+        }
+      ]
+    },
+    {
+      "key": "vehicles-1",
+      "category": "everyday-objects",
+      "subcategory": "vehicles",
+      "title": "Vehicles 1",
+      "description": "Things that go — on roads, rails, water and in the air.",
+      "cards": [
+        {
+          "wiki": "Bicycle",
+          "name": "Bicycle",
+          "facts": [
+            "The bicycle has two wheels.",
+            "You push the pedals to make a bicycle go."
+          ]
+        },
+        {
+          "wiki": "Dump truck",
+          "name": "Dump Truck",
+          "facts": [
+            "The dump truck carries dirt and rocks.",
+            "The back of a dump truck tips up to pour out its load."
+          ]
+        },
+        {
+          "wiki": "Bus",
+          "name": "Bus",
+          "facts": [
+            "The bus carries many people.",
+            "A bus stops at bus stops along its route."
+          ]
+        },
+        {
+          "wiki": "Fire engine",
+          "name": "Fire Truck",
+          "facts": [
+            "The fire truck helps put out fires.",
+            "Fire trucks carry ladders and hoses."
+          ]
+        },
+        {
+          "wiki": "Ambulance",
+          "name": "Ambulance",
+          "facts": [
+            "The ambulance takes people to the hospital.",
+            "An ambulance has flashing lights and a siren."
+          ]
+        },
+        {
+          "wiki": "Tractor",
+          "name": "Tractor",
+          "facts": [
+            "The tractor works on farms.",
+            "Tractors have big back wheels."
+          ]
+        },
+        {
+          "wiki": "Excavator",
+          "name": "Excavator",
+          "facts": [
+            "The excavator digs.",
+            "An excavator has a big bucket on a long arm."
+          ]
+        },
+        {
+          "wiki": "Bulldozer",
+          "name": "Bulldozer",
+          "facts": [
+            "The bulldozer pushes dirt.",
+            "Bulldozers move on tracks instead of wheels."
+          ]
+        },
+        {
+          "wiki": "Helicopter",
+          "name": "Helicopter",
+          "facts": [
+            "The helicopter has spinning blades.",
+            "A helicopter can fly straight up and down."
+          ]
+        },
+        {
+          "wiki": "Airliner",
+          "name": "Airplane",
+          "facts": [
+            "The airplane flies in the sky.",
+            "Big airplanes carry hundreds of people."
+          ]
+        },
+        {
+          "wiki": "Hot air balloon",
+          "name": "Hot Air Balloon",
+          "facts": [
+            "The hot air balloon floats.",
+            "Hot air makes the balloon rise."
+          ]
+        },
+        {
+          "wiki": "School bus",
+          "name": "School Bus",
+          "facts": [
+            "The school bus is yellow.",
+            "School buses take children to school."
+          ]
+        },
+        {
+          "wiki": "Submarine",
+          "name": "Submarine",
+          "facts": [
+            "The submarine goes under the water.",
+            "A submarine can stay underwater for a long time."
+          ]
+        },
+        {
+          "wiki": "Steam locomotive",
+          "name": "Steam Train",
+          "facts": [
+            "The steam train puffs smoke.",
+            "Steam trains burn coal or wood to boil water."
+          ]
+        },
+        {
+          "wiki": "Tram",
+          "name": "Tram",
+          "facts": [
+            "The tram runs on rails in the street.",
+            "Trams get power from wires above them."
+          ]
+        },
+        {
+          "wiki": "Garbage truck",
+          "name": "Garbage Truck",
+          "facts": [
+            "The garbage truck picks up trash.",
+            "Garbage trucks squash the trash inside."
+          ]
+        },
+        {
+          "wiki": "Tow truck",
+          "name": "Tow Truck",
+          "facts": [
+            "The tow truck pulls cars.",
+            "A tow truck helps when a car breaks down."
+          ]
+        },
+        {
+          "wiki": "Road roller",
+          "name": "Road Roller",
+          "facts": [
+            "The road roller flattens the road.",
+            "A road roller has a big, heavy drum instead of front wheels."
+          ]
+        },
+        {
+          "wiki": "Snowplow",
+          "name": "Snowplow",
+          "facts": [
+            "The snowplow pushes snow off the road.",
+            "Snowplows have a big blade in front."
+          ]
+        },
+        {
+          "wiki": "Cement mixer truck",
+          "name": "Cement Mixer",
+          "facts": [
+            "The cement mixer spins.",
+            "The drum turns to keep the cement from getting hard."
+          ],
+          "file": "XC94213 (12.12.07) Optimizer (37375429540).jpg"
+        },
+        {
+          "wiki": "Police car",
+          "name": "Police Car",
+          "facts": [
+            "The police car has flashing lights.",
+            "Police officers drive police cars."
+          ]
+        },
+        {
+          "wiki": "Container ship",
+          "name": "Container Ship",
+          "facts": [
+            "The container ship carries big boxes.",
+            "Container ships cross the oceans."
+          ]
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "key": "birds-book-1",
+      "pack": "birds-1",
+      "title": "Birds I Know",
+      "stage": 1,
+      "cards": 10
+    },
+    {
+      "key": "birds-book-2",
+      "pack": "birds-1",
+      "title": "More Birds",
+      "stage": 2,
+      "cards": 6,
+      "offset": 10
+    },
+    {
+      "key": "animals-book-1",
+      "pack": "animals-1",
+      "title": "Wild Animals",
+      "stage": 1,
+      "cards": 10
+    },
+    {
+      "key": "animals-book-2",
+      "pack": "animals-1",
+      "title": "Animals Big and Small",
+      "stage": 2,
+      "cards": 6,
+      "offset": 10
+    },
+    {
+      "key": "animals-book-3",
+      "pack": "animals-1",
+      "title": "In the Forest",
+      "stage": 1,
+      "cards": 8,
+      "offset": 14
+    },
+    {
+      "key": "vehicles-book-1",
+      "pack": "vehicles-1",
+      "title": "Things That Go",
+      "stage": 1,
+      "cards": 10
+    },
+    {
+      "key": "vehicles-book-2",
+      "pack": "vehicles-1",
+      "title": "Helpers on the Road",
+      "stage": 2,
+      "cards": 6,
+      "offset": 10
+    },
+    {
+      "key": "vehicles-book-3",
+      "pack": "vehicles-1",
+      "title": "Up, Up and Away",
+      "stage": 1,
+      "cards": 6,
+      "offset": 16
+    },
+    {
+      "key": "vehicles-book-4",
+      "pack": "vehicles-1",
+      "title": "Big Machines",
+      "stage": 1,
+      "cards": 5,
+      "offset": 5
+    },
+    {
+      "key": "vehicles-book-5",
+      "pack": "vehicles-1",
+      "title": "On the Go",
+      "stage": 2,
+      "cards": 8,
+      "offset": 0
+    }
+  ]
+}

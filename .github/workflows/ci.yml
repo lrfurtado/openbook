@@ -1,0 +1,26 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env: { POSTGRES_USER: openbook, POSTGRES_PASSWORD: openbook, POSTGRES_DB: openbook }
+        ports: ['5433:5432']
+        options: --health-cmd pg_isready --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://openbook:openbook@localhost:5433/openbook
+      JWT_SECRET: ci-secret
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run build -w @openbook/shared
+      - run: npm test -w @openbook/shared
+      - run: npx prisma migrate deploy
+        working-directory: apps/api
+      - run: npm test -w api
+      - run: npx tsc --noEmit && npx expo lint
+        working-directory: apps/mobile

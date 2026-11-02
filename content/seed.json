@@ -1,0 +1,3266 @@
+{
+  "categories": [
+    {
+      "slug": "nature-science",
+      "name": "Nature & Science",
+      "subcategories": [
+        {
+          "slug": "animals",
+          "name": "Animals"
+        },
+        {
+          "slug": "birds",
+          "name": "Birds"
+        },
+        {
+          "slug": "trees",
+          "name": "Trees"
+        },
+        {
+          "slug": "flowers",
+          "name": "Flowers"
+        },
+        {
+          "slug": "rocks",
+          "name": "Rocks"
+        },
+        {
+          "slug": "constellations",
+          "name": "Constellations"
+        },
+        {
+          "slug": "human-anatomy",
+          "name": "Human Anatomy"
+        }
+      ]
+    },
+    {
+      "slug": "everyday-objects",
+      "name": "Everyday Objects",
+      "subcategories": [
+        {
+          "slug": "musical-instruments",
+          "name": "Musical Instruments"
+        },
+        {
+          "slug": "tools",
+          "name": "Tools"
+        },
+        {
+          "slug": "vehicles",
+          "name": "Vehicles"
+        }
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "key": "birds-1",
+      "category": "nature-science",
+      "subcategory": "birds",
+      "title": "Birds of the World 1",
+      "description": "Twenty-two striking birds from around the world.",
+      "cards": [
+        {
+          "key": "birds-1/bald-eagle",
+          "name": {
+            "en": "Bald Eagle"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The bald eagle lives in North America."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Bald eagles build some of the biggest nests of any bird."
+              }
+            }
+          ],
+          "image": {
+            "width": 4007,
+            "height": 3206,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/1280px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/1920px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/3840px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bald_eagle_about_to_fly_in_Alaska_(2016).jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+          }
+        },
+        {
+          "key": "birds-1/puffin",
+          "name": {
+            "en": "Puffin"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The puffin has a bright orange beak."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Puffins dive underwater to catch small fish."
+              }
+            }
+          ],
+          "image": {
+            "width": 3317,
+            "height": 3317,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/1280px-Puffin_%28Fratercula_arctica%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/1920px-Puffin_%28Fratercula_arctica%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Puffin_%28Fratercula_arctica%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Charles J. Sharp",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puffin_(Fratercula_arctica).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/flamingo",
+          "name": {
+            "en": "Flamingo"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The flamingo is pink."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Flamingos get their pink color from the food they eat."
+              }
+            }
+          ],
+          "image": {
+            "width": 3849,
+            "height": 2887,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/American_Flamingo_JG.jpg/1280px-American_Flamingo_JG.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/American_Flamingo_JG.jpg/1920px-American_Flamingo_JG.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/American_Flamingo_JG.jpg/3840px-American_Flamingo_JG.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "JeffreyGammon",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Flamingo_JG.jpg",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+          }
+        },
+        {
+          "key": "birds-1/emperor-penguin",
+          "name": {
+            "en": "Emperor Penguin"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The emperor penguin lives in Antarctica."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "The emperor penguin is the tallest penguin."
+              }
+            }
+          ],
+          "image": {
+            "width": 4592,
+            "height": 2576,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Empereur_se_gratte.jpg/1280px-Empereur_se_gratte.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Empereur_se_gratte.jpg/1920px-Empereur_se_gratte.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Empereur_se_gratte.jpg/3840px-Empereur_se_gratte.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "TESSIER Ewan",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empereur_se_gratte.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/barn-owl",
+          "name": {
+            "en": "Barn Owl"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The barn owl hunts at night."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Barn owls have a heart-shaped face."
+              }
+            }
+          ],
+          "image": {
+            "width": 2362,
+            "height": 3544,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/American_Barn_Owl_%28Tyto_furcata_guatemalae%29%2C_Orange_Walk.jpg/1280px-American_Barn_Owl_%28Tyto_furcata_guatemalae%29%2C_Orange_Walk.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/American_Barn_Owl_%28Tyto_furcata_guatemalae%29%2C_Orange_Walk.jpg/1920px-American_Barn_Owl_%28Tyto_furcata_guatemalae%29%2C_Orange_Walk.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/American_Barn_Owl_%28Tyto_furcata_guatemalae%29%2C_Orange_Walk.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Charles J. Sharp",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Barn_Owl_(Tyto_furcata_guatemalae),_Orange_Walk.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/peacock",
+          "name": {
+            "en": "Peacock"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The peacock has a long, colorful tail."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A peacock spreads its tail feathers like a fan."
+              }
+            }
+          ],
+          "image": {
+            "width": 3217,
+            "height": 4826,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/1280px-Peacock_on_tree_%2852077240794%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/1920px-Peacock_on_tree_%2852077240794%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Peacock_on_tree_%2852077240794%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Kandukuru Nagarjun from Bangalore, India",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peacock_on_tree_(52077240794).jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+          }
+        },
+        {
+          "key": "birds-1/toucan",
+          "name": {
+            "en": "Toucan"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The toucan has a very big beak."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Toucans live in South America."
+              }
+            }
+          ],
+          "image": {
+            "width": 6914,
+            "height": 4609,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/1280px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/1920px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/3840px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Giles Laurent",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/hummingbird",
+          "name": {
+            "en": "Hummingbird"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The hummingbird is very small."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Hummingbirds can fly backwards."
+              }
+            }
+          ],
+          "image": {
+            "width": 2862,
+            "height": 1968,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Archilochus_colubris_%28Male%29.jpg/1280px-Archilochus_colubris_%28Male%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Archilochus_colubris_%28Male%29.jpg/1920px-Archilochus_colubris_%28Male%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Archilochus_colubris_%28Male%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Joe Schneid, Louisville, Kentucky",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Archilochus_colubris_(Male).jpg",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+          }
+        },
+        {
+          "key": "birds-1/mallard-duck",
+          "name": {
+            "en": "Mallard Duck"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The mallard is a duck."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "The male mallard has a shiny green head."
+              }
+            }
+          ],
+          "image": {
+            "width": 2384,
+            "height": 2384,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg/1280px-Anas_platyrhynchos_male_female_quadrat.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg/1920px-Anas_platyrhynchos_male_female_quadrat.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Lens",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg",
+            "license": "CC BY-SA 2.5",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+          }
+        },
+        {
+          "key": "birds-1/ostrich",
+          "name": {
+            "en": "Ostrich"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The ostrich is the biggest bird."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Ostriches cannot fly, but they run very fast."
+              }
+            }
+          ],
+          "image": {
+            "width": 1795,
+            "height": 1197,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/1280px-Struthio_camelus_-_Etosha_2014_%283%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Yathin S Krishnappa",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/blue-jay",
+          "name": {
+            "en": "Blue Jay"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The blue jay has blue feathers."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Blue jays like to eat acorns."
+              }
+            }
+          ],
+          "image": {
+            "width": 3319,
+            "height": 4526,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Blue_jay_in_PP_%2830960%29.jpg/1280px-Blue_jay_in_PP_%2830960%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Blue_jay_in_PP_%2830960%29.jpg/1920px-Blue_jay_in_PP_%2830960%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Blue_jay_in_PP_%2830960%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Rhododendrites",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_jay_in_PP_(30960).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/cardinal",
+          "name": {
+            "en": "Cardinal"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The male cardinal is bright red."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Cardinals have a crest of feathers on their head."
+              }
+            }
+          ],
+          "image": {
+            "width": 2996,
+            "height": 3934,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg/1280px-Male_northern_cardinal_in_Central_Park_%2852612%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg/1920px-Male_northern_cardinal_in_Central_Park_%2852612%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Rhododendrites",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/kingfisher",
+          "name": {
+            "en": "Kingfisher"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The kingfisher catches fish."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Kingfishers dive straight into the water."
+              }
+            }
+          ],
+          "image": {
+            "width": 2000,
+            "height": 2000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Common_Kingfisher_Alcedo_atthis.jpg/1280px-Common_Kingfisher_Alcedo_atthis.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Common_Kingfisher_Alcedo_atthis.jpg/1920px-Common_Kingfisher_Alcedo_atthis.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Common_Kingfisher_Alcedo_atthis.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Andreas Trepte",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Kingfisher_Alcedo_atthis.jpg",
+            "license": "CC BY-SA 2.5",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+          }
+        },
+        {
+          "key": "birds-1/pelican",
+          "name": {
+            "en": "Pelican"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The pelican has a pouch under its beak."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Pelicans scoop up fish with their pouch."
+              }
+            }
+          ],
+          "image": {
+            "width": 3645,
+            "height": 2604,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Brown_pelican_in_flight_%28Bodega_Bay%29.jpg/1280px-Brown_pelican_in_flight_%28Bodega_Bay%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Brown_pelican_in_flight_%28Bodega_Bay%29.jpg/1920px-Brown_pelican_in_flight_%28Bodega_Bay%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Brown_pelican_in_flight_%28Bodega_Bay%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Frank Schulenburg",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_pelican_in_flight_(Bodega_Bay).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/swan",
+          "name": {
+            "en": "Swan"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The swan has a long neck."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Baby swans are called cygnets."
+              }
+            }
+          ],
+          "image": {
+            "width": 3888,
+            "height": 2592,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/CygneVaires.jpg/1280px-CygneVaires.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/CygneVaires.jpg/1920px-CygneVaires.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/CygneVaires.jpg/3840px-CygneVaires.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Sanchezn",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:CygneVaires.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "birds-1/robin",
+          "name": {
+            "en": "Robin"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The robin has an orange chest."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Robins sing even in winter."
+              }
+            }
+          ],
+          "image": {
+            "width": 2574,
+            "height": 2059,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/1280px-Erithacus_rubecula_with_cocked_head.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/1920px-Erithacus_rubecula_with_cocked_head.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Erithacus_rubecula_with_cocked_head.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Francis C. Franklin",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_with_cocked_head.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "birds-1/woodpecker",
+          "name": {
+            "en": "Woodpecker"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The woodpecker pecks holes in trees."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Woodpeckers find insects under tree bark."
+              }
+            }
+          ],
+          "image": {
+            "width": 1754,
+            "height": 1944,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/PileatedWoodpeckerFeedingonTree%2C_crop.jpg/1280px-PileatedWoodpeckerFeedingonTree%2C_crop.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/PileatedWoodpeckerFeedingonTree%2C_crop.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/PileatedWoodpeckerFeedingonTree%2C_crop.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Joshlaymon",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:PileatedWoodpeckerFeedingonTree,_crop.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "birds-1/macaw",
+          "name": {
+            "en": "Macaw"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The macaw is a parrot."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Macaws can live for more than fifty years."
+              }
+            }
+          ],
+          "image": {
+            "width": 5435,
+            "height": 3623,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/1280px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/1920px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/3840px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Charles J. Sharp",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/snowy-owl",
+          "name": {
+            "en": "Snowy Owl"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The snowy owl is white."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Snowy owls live in cold places in the Arctic."
+              }
+            }
+          ],
+          "image": {
+            "width": 2319,
+            "height": 1545,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/1280px-SnowyOwlAmericanBlackDuck.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/1920px-SnowyOwlAmericanBlackDuck.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/SnowyOwlAmericanBlackDuck.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Chuck Homler d/b/a Focus On Wildlife",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:SnowyOwlAmericanBlackDuck.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "birds-1/chicken",
+          "name": {
+            "en": "Chicken"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The chicken lays eggs."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A male chicken is called a rooster."
+              }
+            }
+          ],
+          "image": {
+            "width": 3739,
+            "height": 2470,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Rooster_portrait%2C_France.jpg/1280px-Rooster_portrait%2C_France.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Rooster_portrait%2C_France.jpg/1920px-Rooster_portrait%2C_France.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Rooster_portrait%2C_France.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Clément Bardot",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rooster_portrait,_France.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/seagull",
+          "name": {
+            "en": "Seagull"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The seagull lives near the sea."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Seagulls eat fish and many other foods."
+              }
+            }
+          ],
+          "image": {
+            "width": 4608,
+            "height": 3335,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/American_Herring_Gull%2C_Brooklyn_Army_Terminal_%2801813%29.jpg/1280px-American_Herring_Gull%2C_Brooklyn_Army_Terminal_%2801813%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/American_Herring_Gull%2C_Brooklyn_Army_Terminal_%2801813%29.jpg/1920px-American_Herring_Gull%2C_Brooklyn_Army_Terminal_%2801813%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/American_Herring_Gull%2C_Brooklyn_Army_Terminal_%2801813%29.jpg/3840px-American_Herring_Gull%2C_Brooklyn_Army_Terminal_%2801813%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Rhododendrites",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Herring_Gull,_Brooklyn_Army_Terminal_(01813).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "birds-1/roadrunner",
+          "name": {
+            "en": "Roadrunner"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The roadrunner runs fast."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Roadrunners live in the desert."
+              }
+            }
+          ],
+          "image": {
+            "width": 6720,
+            "height": 4480,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Greater_Roadrunner_Tingley_Beach.jpg/1280px-Greater_Roadrunner_Tingley_Beach.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Greater_Roadrunner_Tingley_Beach.jpg/1920px-Greater_Roadrunner_Tingley_Beach.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Greater_Roadrunner_Tingley_Beach.jpg/3840px-Greater_Roadrunner_Tingley_Beach.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Polinova",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greater_Roadrunner_Tingley_Beach.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        }
+      ]
+    },
+    {
+      "key": "animals-1",
+      "category": "nature-science",
+      "subcategory": "animals",
+      "title": "Wild Animals 1",
+      "description": "Big and small mammals from every continent.",
+      "cards": [
+        {
+          "key": "animals-1/elephant",
+          "name": {
+            "en": "Elephant"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The elephant has a long trunk."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Elephants are the biggest animals on land."
+              }
+            }
+          ],
+          "image": {
+            "width": 8213,
+            "height": 5475,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/1280px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/1920px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/3840px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Giles Laurent",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/giraffe",
+          "name": {
+            "en": "Giraffe"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The giraffe has a very long neck."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Giraffes are the tallest animals in the world."
+              }
+            }
+          ],
+          "image": {
+            "width": 4256,
+            "height": 2832,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Three_giraffes_01.jpg/1280px-Three_giraffes_01.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Three_giraffes_01.jpg/1920px-Three_giraffes_01.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Three_giraffes_01.jpg/3840px-Three_giraffes_01.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Byrdyak",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Three_giraffes_01.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/lion",
+          "name": {
+            "en": "Lion"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The lion is a big cat."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Lions live together in groups called prides."
+              }
+            }
+          ],
+          "image": {
+            "width": 5168,
+            "height": 3448,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/1280px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/1920px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/3840px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Giles Laurent",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/tiger",
+          "name": {
+            "en": "Tiger"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The tiger has stripes."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "No two tigers have the same stripes."
+              }
+            }
+          ],
+          "image": {
+            "width": 4500,
+            "height": 3000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/1280px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/1920px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/3840px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Charles J. Sharp",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/zebra",
+          "name": {
+            "en": "Zebra"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The zebra has black and white stripes."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Zebras live in Africa."
+              }
+            }
+          ],
+          "image": {
+            "width": 4120,
+            "height": 2747,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/1280px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/1920px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/3840px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Yathin S Krishnappa",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equus_quagga_burchellii_-_Etosha,_2014.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "animals-1/hippopotamus",
+          "name": {
+            "en": "Hippopotamus"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The hippopotamus loves water."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Hippos spend most of the day in rivers and lakes."
+              }
+            }
+          ],
+          "image": {
+            "width": 4117,
+            "height": 2745,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/1280px-Portrait_Hippopotamus_in_the_water.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/1920px-Portrait_Hippopotamus_in_the_water.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/3840px-Portrait_Hippopotamus_in_the_water.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Muhammad Mahdi Karim",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_Hippopotamus_in_the_water.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/rhinoceros",
+          "name": {
+            "en": "Rhinoceros"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The rhinoceros has horns on its nose."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Rhinos eat grass and leaves."
+              }
+            }
+          ],
+          "image": {
+            "width": 7548,
+            "height": 5032,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/1280px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/1920px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/3840px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Giles Laurent",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/gorilla",
+          "name": {
+            "en": "Gorilla"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The gorilla is a big ape."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Gorillas live in forests in Africa."
+              }
+            }
+          ],
+          "image": {
+            "width": 2228,
+            "height": 2488,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Male_gorilla_in_SF_zoo.jpg/1280px-Male_gorilla_in_SF_zoo.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Male_gorilla_in_SF_zoo.jpg/1920px-Male_gorilla_in_SF_zoo.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Male_gorilla_in_SF_zoo.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Brocken Inaglory",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_gorilla_in_SF_zoo.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "animals-1/cheetah",
+          "name": {
+            "en": "Cheetah"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The cheetah runs very fast."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "The cheetah is the fastest animal on land."
+              }
+            }
+          ],
+          "image": {
+            "width": 4181,
+            "height": 2787,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/1280px-Male_cheetah_facing_left_in_South_Africa.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/1920px-Male_cheetah_facing_left_in_South_Africa.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/3840px-Male_cheetah_facing_left_in_South_Africa.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "AfricanConservation",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/panda",
+          "name": {
+            "en": "Panda"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The panda is black and white."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Pandas eat bamboo."
+              }
+            }
+          ],
+          "image": {
+            "width": 4272,
+            "height": 2848,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1280px-Grosser_Panda.JPG",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1920px-Grosser_Panda.JPG",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/3840px-Grosser_Panda.JPG",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "J. Patrick Fischer",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "animals-1/kangaroo",
+          "name": {
+            "en": "Kangaroo"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The kangaroo hops."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A mother kangaroo carries her baby in a pouch."
+              }
+            }
+          ],
+          "image": {
+            "width": 2940,
+            "height": 3136,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osphranter_rufus_-_Tierpark_Hagenbeck_01.jpg/1280px-Osphranter_rufus_-_Tierpark_Hagenbeck_01.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osphranter_rufus_-_Tierpark_Hagenbeck_01.jpg/1920px-Osphranter_rufus_-_Tierpark_Hagenbeck_01.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Osphranter_rufus_-_Tierpark_Hagenbeck_01.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "H. Zell",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osphranter_rufus_-_Tierpark_Hagenbeck_01.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "animals-1/koala",
+          "name": {
+            "en": "Koala"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The koala lives in trees."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Koalas eat eucalyptus leaves."
+              }
+            }
+          ],
+          "image": {
+            "width": 5184,
+            "height": 3456,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Koala_in_Zoo_Duisburg.jpg/1280px-Koala_in_Zoo_Duisburg.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Koala_in_Zoo_Duisburg.jpg/1920px-Koala_in_Zoo_Duisburg.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Koala_in_Zoo_Duisburg.jpg/3840px-Koala_in_Zoo_Duisburg.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Till Niermann",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koala_in_Zoo_Duisburg.jpg",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+          }
+        },
+        {
+          "key": "animals-1/polar-bear",
+          "name": {
+            "en": "Polar Bear"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The polar bear lives on the ice."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Polar bears are very good swimmers."
+              }
+            }
+          ],
+          "image": {
+            "width": 2987,
+            "height": 1680,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg/1280px-Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg/1920px-Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Andreas Weith",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polar_bear_(Ursus_maritimus)_in_the_drift_ice_region_north_of_Svalbard.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/brown-bear",
+          "name": {
+            "en": "Brown Bear"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The brown bear is big and strong."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Brown bears sleep through most of the winter."
+              }
+            }
+          ],
+          "image": {
+            "width": 2400,
+            "height": 1600,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/1280px-2010-kodiak-bear-1.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/1920px-2010-kodiak-bear-1.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/2010-kodiak-bear-1.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Yathin S Krishnappa",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010-kodiak-bear-1.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "animals-1/wolf",
+          "name": {
+            "en": "Wolf"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The wolf howls."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Wolves live and hunt in packs."
+              }
+            }
+          ],
+          "image": {
+            "width": 3440,
+            "height": 2664,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/1280px-Eurasian_wolf_2.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/1920px-Eurasian_wolf_2.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Eurasian_wolf_2.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "User:Mas3cf",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/fox",
+          "name": {
+            "en": "Fox"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The fox has a bushy tail."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Foxes can hear very quiet sounds."
+              }
+            }
+          ],
+          "image": {
+            "width": 3459,
+            "height": 2292,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg/1280px-Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg/1920px-Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "ClaudiaTen",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/moose",
+          "name": {
+            "en": "Moose"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The moose has big antlers."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "The moose is the largest kind of deer."
+              }
+            }
+          ],
+          "image": {
+            "width": 5247,
+            "height": 3498,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/1280px-Alaska_moose.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/1920px-Alaska_moose.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/3840px-Alaska_moose.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Paxson Woelber",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/camel",
+          "name": {
+            "en": "Camel"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The camel has a hump."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Camels can go a long time without water."
+              }
+            }
+          ],
+          "image": {
+            "width": 3872,
+            "height": 2592,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Camelus_dromedarius_in_Nuweiba.jpg/1280px-Camelus_dromedarius_in_Nuweiba.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Camelus_dromedarius_in_Nuweiba.jpg/1920px-Camelus_dromedarius_in_Nuweiba.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Camelus_dromedarius_in_Nuweiba.jpg/3840px-Camelus_dromedarius_in_Nuweiba.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Florian Prischl",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius_in_Nuweiba.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "animals-1/chimpanzee",
+          "name": {
+            "en": "Chimpanzee"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The chimpanzee is an ape."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Chimpanzees use sticks as tools."
+              }
+            }
+          ],
+          "image": {
+            "width": 5184,
+            "height": 7776,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/1280px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/1920px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/3840px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Giles Laurent",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "animals-1/sloth",
+          "name": {
+            "en": "Sloth"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The sloth moves very slowly."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Sloths hang upside down in trees."
+              }
+            }
+          ],
+          "image": {
+            "width": 1536,
+            "height": 2048,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bradypus.jpg/1280px-Bradypus.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Stefan Laube (Tauchgurke)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+          }
+        },
+        {
+          "key": "animals-1/hedgehog",
+          "name": {
+            "en": "Hedgehog"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The hedgehog has spines."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A hedgehog rolls into a ball to stay safe."
+              }
+            }
+          ],
+          "image": {
+            "width": 2002,
+            "height": 1500,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Erinaceus_europaeus_LC0119.jpg/1280px-Erinaceus_europaeus_LC0119.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Erinaceus_europaeus_LC0119.jpg/1920px-Erinaceus_europaeus_LC0119.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Erinaceus_europaeus_LC0119.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Jörg Hempel",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_LC0119.jpg",
+            "license": "CC BY-SA 2.0 de",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+          }
+        },
+        {
+          "key": "animals-1/squirrel",
+          "name": {
+            "en": "Squirrel"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The squirrel climbs trees."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Squirrels bury nuts to eat later."
+              }
+            }
+          ],
+          "image": {
+            "width": 3459,
+            "height": 2307,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Grey_squirrel_%28Sciurus_carolinensis%29_02.jpg/1280px-Grey_squirrel_%28Sciurus_carolinensis%29_02.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Grey_squirrel_%28Sciurus_carolinensis%29_02.jpg/1920px-Grey_squirrel_%28Sciurus_carolinensis%29_02.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Grey_squirrel_%28Sciurus_carolinensis%29_02.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Charles J. Sharp",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grey_squirrel_(Sciurus_carolinensis)_02.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        }
+      ]
+    },
+    {
+      "key": "vehicles-1",
+      "category": "everyday-objects",
+      "subcategory": "vehicles",
+      "title": "Vehicles 1",
+      "description": "Things that go — on roads, rails, water and in the air.",
+      "cards": [
+        {
+          "key": "vehicles-1/bicycle",
+          "name": {
+            "en": "Bicycle"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The bicycle has two wheels."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "You push the pedals to make a bicycle go."
+              }
+            }
+          ],
+          "image": {
+            "width": 3556,
+            "height": 2371,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Left_side_of_Flying_Pigeon.jpg/1280px-Left_side_of_Flying_Pigeon.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Left_side_of_Flying_Pigeon.jpg/1920px-Left_side_of_Flying_Pigeon.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "齐健 from Peking, People's Republic of China",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Left_side_of_Flying_Pigeon.jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/dump-truck",
+          "name": {
+            "en": "Dump Truck"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The dump truck carries dirt and rocks."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "The back of a dump truck tips up to pour out its load."
+              }
+            }
+          ],
+          "image": {
+            "width": 3200,
+            "height": 2400,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Freightliner_M2_106_6x4_2014_%2814240376744%29.jpg/1280px-Freightliner_M2_106_6x4_2014_%2814240376744%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Freightliner_M2_106_6x4_2014_%2814240376744%29.jpg/1920px-Freightliner_M2_106_6x4_2014_%2814240376744%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Freightliner_M2_106_6x4_2014_%2814240376744%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "order_242 from Chile",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freightliner_M2_106_6x4_2014_(14240376744).jpg",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/bus",
+          "name": {
+            "en": "Bus"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The bus carries many people."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A bus stops at bus stops along its route."
+              }
+            }
+          ],
+          "image": {
+            "width": 3874,
+            "height": 2583,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/LTZ1328-19-20241030-160332.jpg/1280px-LTZ1328-19-20241030-160332.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/LTZ1328-19-20241030-160332.jpg/1920px-LTZ1328-19-20241030-160332.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/LTZ1328-19-20241030-160332.jpg/3840px-LTZ1328-19-20241030-160332.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "SIA321",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:LTZ1328-19-20241030-160332.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "vehicles-1/fire-truck",
+          "name": {
+            "en": "Fire Truck"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The fire truck helps put out fires."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Fire trucks carry ladders and hoses."
+              }
+            }
+          ],
+          "image": {
+            "width": 4592,
+            "height": 3056,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dublin_Fire_Brigade_Pump_Ladder_D32.jpg/1280px-Dublin_Fire_Brigade_Pump_Ladder_D32.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dublin_Fire_Brigade_Pump_Ladder_D32.jpg/1920px-Dublin_Fire_Brigade_Pump_Ladder_D32.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dublin_Fire_Brigade_Pump_Ladder_D32.jpg/3840px-Dublin_Fire_Brigade_Pump_Ladder_D32.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "William Murphy",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dublin_Fire_Brigade_Pump_Ladder_D32.jpg",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/ambulance",
+          "name": {
+            "en": "Ambulance"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The ambulance takes people to the hospital."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "An ambulance has flashing lights and a siren."
+              }
+            }
+          ],
+          "image": {
+            "width": 3888,
+            "height": 2592,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stockholm%2C_ambulans%2C_2014%2C_21.jpg/1280px-Stockholm%2C_ambulans%2C_2014%2C_21.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stockholm%2C_ambulans%2C_2014%2C_21.jpg/1920px-Stockholm%2C_ambulans%2C_2014%2C_21.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stockholm%2C_ambulans%2C_2014%2C_21.jpg/3840px-Stockholm%2C_ambulans%2C_2014%2C_21.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "AleWi",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stockholm,_ambulans,_2014,_21.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "vehicles-1/tractor",
+          "name": {
+            "en": "Tractor"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The tractor works on farms."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Tractors have big back wheels."
+              }
+            }
+          ],
+          "image": {
+            "width": 2484,
+            "height": 1964,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ford_8N.jpg/1280px-Ford_8N.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ford_8N.jpg/1920px-Ford_8N.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Ford_8N.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Mulad",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_8N.jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/excavator",
+          "name": {
+            "en": "Excavator"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The excavator digs."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "An excavator has a big bucket on a long arm."
+              }
+            }
+          ],
+          "image": {
+            "width": 5300,
+            "height": 3345,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Excavator_Postiguet_Beach_2.jpg/1280px-Excavator_Postiguet_Beach_2.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Excavator_Postiguet_Beach_2.jpg/1920px-Excavator_Postiguet_Beach_2.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Excavator_Postiguet_Beach_2.jpg/3840px-Excavator_Postiguet_Beach_2.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "kallerna",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Excavator_Postiguet_Beach_2.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "vehicles-1/bulldozer",
+          "name": {
+            "en": "Bulldozer"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The bulldozer pushes dirt."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Bulldozers move on tracks instead of wheels."
+              }
+            }
+          ],
+          "image": {
+            "width": 3008,
+            "height": 2000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/CatD9T.jpg/1280px-CatD9T.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/CatD9T.jpg/1920px-CatD9T.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/CatD9T.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Shaun Greiner",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:CatD9T.jpg",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/helicopter",
+          "name": {
+            "en": "Helicopter"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The helicopter has spinning blades."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A helicopter can fly straight up and down."
+              }
+            }
+          ],
+          "image": {
+            "width": 4262,
+            "height": 2841,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/VH-SUF_Taking_Off.jpg/1280px-VH-SUF_Taking_Off.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/VH-SUF_Taking_Off.jpg/1920px-VH-SUF_Taking_Off.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/VH-SUF_Taking_Off.jpg/3840px-VH-SUF_Taking_Off.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Fly45yt",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:VH-SUF_Taking_Off.jpg",
+            "license": "CC BY 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+          }
+        },
+        {
+          "key": "vehicles-1/airplane",
+          "name": {
+            "en": "Airplane"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The airplane flies in the sky."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Big airplanes carry hundreds of people."
+              }
+            }
+          ],
+          "image": {
+            "width": 4608,
+            "height": 3456,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/United_A320_N405UA_at_BOS_%2833787222465%29.jpg/1280px-United_A320_N405UA_at_BOS_%2833787222465%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/United_A320_N405UA_at_BOS_%2833787222465%29.jpg/1920px-United_A320_N405UA_at_BOS_%2833787222465%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/United_A320_N405UA_at_BOS_%2833787222465%29.jpg/3840px-United_A320_N405UA_at_BOS_%2833787222465%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "G B_NZ",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:United_A320_N405UA_at_BOS_(33787222465).jpg",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/hot-air-balloon",
+          "name": {
+            "en": "Hot Air Balloon"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The hot air balloon floats."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Hot air makes the balloon rise."
+              }
+            }
+          ],
+          "image": {
+            "width": 1896,
+            "height": 2852,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2006_Ojiya_balloon_festival_011.jpg/1280px-2006_Ojiya_balloon_festival_011.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2006_Ojiya_balloon_festival_011.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2006_Ojiya_balloon_festival_011.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Kropsoq",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Ojiya_balloon_festival_011.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        },
+        {
+          "key": "vehicles-1/school-bus",
+          "name": {
+            "en": "School Bus"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The school bus is yellow."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "School buses take children to school."
+              }
+            }
+          ],
+          "image": {
+            "width": 4000,
+            "height": 3000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IC_CE_school_bus_%28shortened_chassis%29.jpg/1280px-IC_CE_school_bus_%28shortened_chassis%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IC_CE_school_bus_%28shortened_chassis%29.jpg/1920px-IC_CE_school_bus_%28shortened_chassis%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IC_CE_school_bus_%28shortened_chassis%29.jpg/3840px-IC_CE_school_bus_%28shortened_chassis%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Atomic Taco",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:IC_CE_school_bus_(shortened_chassis).jpg",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/submarine",
+          "name": {
+            "en": "Submarine"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The submarine goes under the water."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A submarine can stay underwater for a long time."
+              }
+            }
+          ],
+          "image": {
+            "width": 3000,
+            "height": 2400,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg/1280px-US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg/1920px-US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "U.S. Navy photo by General Dynamics Electric Boat",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_040730-N-1234E-002_PCU_Virginia_(SSN_774)_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+          }
+        },
+        {
+          "key": "vehicles-1/steam-train",
+          "name": {
+            "en": "Steam Train"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The steam train puffs smoke."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Steam trains burn coal or wood to boil water."
+              }
+            }
+          ],
+          "image": {
+            "width": 4000,
+            "height": 3000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Number_4468_Mallard_in_York.jpg/1280px-Number_4468_Mallard_in_York.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Number_4468_Mallard_in_York.jpg/1920px-Number_4468_Mallard_in_York.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Number_4468_Mallard_in_York.jpg/3840px-Number_4468_Mallard_in_York.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "PTG Dudva",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Number_4468_Mallard_in_York.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "vehicles-1/tram",
+          "name": {
+            "en": "Tram"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The tram runs on rails in the street."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Trams get power from wires above them."
+              }
+            }
+          ],
+          "image": {
+            "width": 3264,
+            "height": 2448,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/1280px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/1920px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "ŠJů (cs:ŠJů)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muzeum_MHD,_tramvaje_T3_8084_a_6149,_zep%C5%99edu.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+          }
+        },
+        {
+          "key": "vehicles-1/garbage-truck",
+          "name": {
+            "en": "Garbage Truck"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The garbage truck picks up trash."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Garbage trucks squash the trash inside."
+              }
+            }
+          ],
+          "image": {
+            "width": 4000,
+            "height": 3000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/LA-City-Sanitation-trash-truck-1.jpg/1280px-LA-City-Sanitation-trash-truck-1.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/LA-City-Sanitation-trash-truck-1.jpg/1920px-LA-City-Sanitation-trash-truck-1.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/LA-City-Sanitation-trash-truck-1.jpg/3840px-LA-City-Sanitation-trash-truck-1.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Bdonjc",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:LA-City-Sanitation-trash-truck-1.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "vehicles-1/tow-truck",
+          "name": {
+            "en": "Tow Truck"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The tow truck pulls cars."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A tow truck helps when a car breaks down."
+              }
+            }
+          ],
+          "image": {
+            "width": 6000,
+            "height": 4000,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Bois_d%27Arc_Bash_2016_43_%28parade%29.jpg/1280px-Bois_d%27Arc_Bash_2016_43_%28parade%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Bois_d%27Arc_Bash_2016_43_%28parade%29.jpg/1920px-Bois_d%27Arc_Bash_2016_43_%28parade%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Bois_d%27Arc_Bash_2016_43_%28parade%29.jpg/3840px-Bois_d%27Arc_Bash_2016_43_%28parade%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Michael Barera",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bois_d%27Arc_Bash_2016_43_(parade).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+          }
+        },
+        {
+          "key": "vehicles-1/road-roller",
+          "name": {
+            "en": "Road Roller"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The road roller flattens the road."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "A road roller has a big, heavy drum instead of front wheels."
+              }
+            }
+          ],
+          "image": {
+            "width": 2100,
+            "height": 1500,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/John_Deere_roller%2C_U.S._Navy%2C_Camp_Covington%2C_NMCB-133%2C_080928-N-1106H-001.jpg/1280px-John_Deere_roller%2C_U.S._Navy%2C_Camp_Covington%2C_NMCB-133%2C_080928-N-1106H-001.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/John_Deere_roller%2C_U.S._Navy%2C_Camp_Covington%2C_NMCB-133%2C_080928-N-1106H-001.jpg/1920px-John_Deere_roller%2C_U.S._Navy%2C_Camp_Covington%2C_NMCB-133%2C_080928-N-1106H-001.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/John_Deere_roller%2C_U.S._Navy%2C_Camp_Covington%2C_NMCB-133%2C_080928-N-1106H-001.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Builder 2nd Class Stuart Helvie, U.S. Navy (U.S. Navy photo)",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Deere_roller,_U.S._Navy,_Camp_Covington,_NMCB-133,_080928-N-1106H-001.jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+          }
+        },
+        {
+          "key": "vehicles-1/snowplow",
+          "name": {
+            "en": "Snowplow"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The snowplow pushes snow off the road."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Snowplows have a big blade in front."
+              }
+            }
+          ],
+          "image": {
+            "width": 3072,
+            "height": 2304,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/TowPLow_front_view2.JPG/1280px-TowPLow_front_view2.JPG",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/TowPLow_front_view2.JPG/1920px-TowPLow_front_view2.JPG",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/TowPLow_front_view2.JPG",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "SnowKing1",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:TowPLow_front_view2.JPG",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+          }
+        },
+        {
+          "key": "vehicles-1/cement-mixer",
+          "name": {
+            "en": "Cement Mixer"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The cement mixer spins."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "The drum turns to keep the cement from getting hard."
+              }
+            }
+          ],
+          "image": {
+            "width": 3105,
+            "height": 2060,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/XC94213_%2812.12.07%29_Optimizer_%2837375429540%29.jpg/1280px-XC94213_%2812.12.07%29_Optimizer_%2837375429540%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/XC94213_%2812.12.07%29_Optimizer_%2837375429540%29.jpg/1920px-XC94213_%2812.12.07%29_Optimizer_%2837375429540%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/XC94213_%2812.12.07%29_Optimizer_%2837375429540%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Lav Ulv from Viby J, Denmark",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:XC94213_(12.12.07)_Optimizer_(37375429540).jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/police-car",
+          "name": {
+            "en": "Police Car"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The police car has flashing lights."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Police officers drive police cars."
+              }
+            }
+          ],
+          "image": {
+            "width": 4931,
+            "height": 2774,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg/1280px-Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg/1920px-Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg/3840px-Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "Raymond Wambsgans",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washington_DC_Metropolitan_Police_Department_Dodge_Charger_No._1605.jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+          }
+        },
+        {
+          "key": "vehicles-1/container-ship",
+          "name": {
+            "en": "Container Ship"
+          },
+          "facts": [
+            {
+              "level": 1,
+              "text": {
+                "en": "The container ship carries big boxes."
+              }
+            },
+            {
+              "level": 2,
+              "text": {
+                "en": "Container ships cross the oceans."
+              }
+            }
+          ],
+          "image": {
+            "width": 3735,
+            "height": 1893,
+            "renditions": [
+              {
+                "size": 1024,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/MAERSK_MC_KINNEY_M%C3%96LLER_%26_MARSEILLE_MAERSK_%2848694054418%29.jpg/1280px-MAERSK_MC_KINNEY_M%C3%96LLER_%26_MARSEILLE_MAERSK_%2848694054418%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 2048,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/MAERSK_MC_KINNEY_M%C3%96LLER_%26_MARSEILLE_MAERSK_%2848694054418%29.jpg/1920px-MAERSK_MC_KINNEY_M%C3%96LLER_%26_MARSEILLE_MAERSK_%2848694054418%29.jpg",
+                "format": "jpeg"
+              },
+              {
+                "size": 3072,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/MAERSK_MC_KINNEY_M%C3%96LLER_%26_MARSEILLE_MAERSK_%2848694054418%29.jpg",
+                "format": "jpeg"
+              }
+            ]
+          },
+          "attribution": {
+            "author": "kees torn",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:MAERSK_MC_KINNEY_M%C3%96LLER_%26_MARSEILLE_MAERSK_(48694054418).jpg",
+            "license": "CC BY-SA 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+          }
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "key": "birds-book-1",
+      "pack": "birds-1",
+      "title": "Birds I Know",
+      "stage": 1,
+      "cards": 10
+    },
+    {
+      "key": "birds-book-2",
+      "pack": "birds-1",
+      "title": "More Birds",
+      "stage": 2,
+      "cards": 6,
+      "offset": 10
+    },
+    {
+      "key": "animals-book-1",
+      "pack": "animals-1",
+      "title": "Wild Animals",
+      "stage": 1,
+      "cards": 10
+    },
+    {
+      "key": "animals-book-2",
+      "pack": "animals-1",
+      "title": "Animals Big and Small",
+      "stage": 2,
+      "cards": 6,
+      "offset": 10
+    },
+    {
+      "key": "animals-book-3",
+      "pack": "animals-1",
+      "title": "In the Forest",
+      "stage": 1,
+      "cards": 8,
+      "offset": 14
+    },
+    {
+      "key": "vehicles-book-1",
+      "pack": "vehicles-1",
+      "title": "Things That Go",
+      "stage": 1,
+      "cards": 10
+    },
+    {
+      "key": "vehicles-book-2",
+      "pack": "vehicles-1",
+      "title": "Helpers on the Road",
+      "stage": 2,
+      "cards": 6,
+      "offset": 10
+    },
+    {
+      "key": "vehicles-book-3",
+      "pack": "vehicles-1",
+      "title": "Up, Up and Away",
+      "stage": 1,
+      "cards": 6,
+      "offset": 16
+    },
+    {
+      "key": "vehicles-book-4",
+      "pack": "vehicles-1",
+      "title": "Big Machines",
+      "stage": 1,
+      "cards": 5,
+      "offset": 5
+    },
+    {
+      "key": "vehicles-book-5",
+      "pack": "vehicles-1",
+      "title": "On the Go",
+      "stage": 2,
+      "cards": 8,
+      "offset": 0
+    }
+  ]
+}

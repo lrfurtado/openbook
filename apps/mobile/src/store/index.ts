@@ -1,0 +1,28 @@
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import Storage from 'expo-sqlite/kv-store';
+import { useDispatch, useSelector } from 'react-redux';
+import { FLUSH, PAUSE, PERSIST, persistReducer, persistStore, PURGE, REGISTER, REHYDRATE } from 'redux-persist';
+import { catalogApi } from './api';
+import { appSlice, downloadsSlice, gateSlice } from './appSlice';
+
+const rootReducer = combineReducers({
+  app: persistReducer({ key: 'app', storage: Storage, version: 1 }, appSlice.reducer),
+  gate: gateSlice.reducer,
+  downloads: downloadsSlice.reducer,
+  [catalogApi.reducerPath]: catalogApi.reducer,
+});
+
+export const store = configureStore({
+  reducer: rootReducer,
+  middleware: (getDefault) =>
+    getDefault({ serializableCheck: { ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER] } }).concat(
+      catalogApi.middleware,
+    ),
+});
+
+export const persistor = persistStore(store);
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+export const useAppSelector = useSelector.withTypes<RootState>();

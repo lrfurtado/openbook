@@ -1,0 +1,29 @@
+{
+  "name": "@openbook/shared",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "@swc/jest"
+    },
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.16.21",
+    "@swc/jest": "^0.2.39",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.5.2",
+    "typescript": "~6.0.3"
+  },
+  "dependencies": {
+    "zod": "^3.25.76"
+  }
+}
