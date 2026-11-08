@@ -1,0 +1,8 @@
+#!/bin/sh
+# Loads the bundled card packs and official books into the database. Safe to re-run: changed content
+# gets a new version so devices update. Run as root after the service has started once (migrations).
+set -e
+cd /usr/lib/openbook/api
+exec runuser -u openbook -- env NODE_ENV=production \
+  OPENBOOK_SEED_FILE=/usr/share/openbook/content/seed.json \
+  /usr/lib/openbook/node --env-file=/etc/openbook/openbook.env dist/seed.js

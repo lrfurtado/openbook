@@ -7,6 +7,24 @@
   ],
   "scripts": {
     "test": "npm run test --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "services:install": "bash scripts/services.sh install",
+    "services:uninstall": "bash scripts/services.sh uninstall",
+    "services:start": "bash scripts/services.sh start",
+    "services:stop": "bash scripts/services.sh stop",
+    "services:restart": "bash scripts/services.sh restart",
+    "services:status": "bash scripts/services.sh status",
+    "services:logs": "bash scripts/services.sh logs",
+    "api:start": "bash scripts/services.sh start api",
+    "api:stop": "bash scripts/services.sh stop api",
+    "api:restart": "bash scripts/services.sh restart api",
+    "api:logs": "bash scripts/services.sh logs api",
+    "web:start": "bash scripts/services.sh start web",
+    "web:stop": "bash scripts/services.sh stop web",
+    "web:restart": "bash scripts/services.sh restart web",
+    "web:logs": "bash scripts/services.sh logs web",
+    "package": "bash scripts/package.sh all",
+    "package:rpm": "bash scripts/package.sh rpm",
+    "package:deb": "bash scripts/package.sh deb"
   }
 }

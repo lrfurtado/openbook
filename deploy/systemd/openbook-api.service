@@ -1,0 +1,20 @@
+[Unit]
+Description=OpenBook API (NestJS)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=@REPO@/apps/api
+Environment=PATH=@NODE_BIN@:/usr/local/bin:/usr/bin:/bin
+EnvironmentFile=-@REPO@/apps/api/.env
+Environment=NODE_ENV=production
+# Build the shared package and the API before every start so the service always runs current code.
+ExecStartPre=@NODE_BIN@/npm run build -w @openbook/shared --prefix @REPO@
+ExecStartPre=@NODE_BIN@/npm run build
+ExecStart=@NODE_BIN@/node --env-file-if-exists=.env dist/main.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

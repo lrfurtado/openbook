@@ -35,7 +35,7 @@ function stripIds<T extends { id: string }>(pages: T[], existing: unknown): T[] 
 }
 
 export async function seed(prisma: PrismaClient, log: (m: string) => void = console.log) {
-  const file = fileURLToPath(new URL('../../../content/seed.json', import.meta.url));
+  const file = process.env.OPENBOOK_SEED_FILE ?? fileURLToPath(new URL('../../../content/seed.json', import.meta.url));
   const data = JSON.parse(await readFile(file, 'utf8')) as SeedFile;
 
   const categoryIds = new Map<string, string>();
@@ -123,7 +123,12 @@ export async function seed(prisma: PrismaClient, log: (m: string) => void = cons
     log(`book ${b.key}: ${book.pages.length} pages`);
   }
 
-  const password = process.env.SEED_ADMIN_PASSWORD ?? 'openbook-dev-password';
+  // Production installs never get CMS accounts with the well-known dev password.
+  const password = process.env.SEED_ADMIN_PASSWORD ?? (process.env.NODE_ENV === 'production' ? null : 'openbook-dev-password');
+  if (!password) {
+    log('skipping CMS accounts: set SEED_ADMIN_PASSWORD to create editor@ and publisher@openbook.local');
+    return;
+  }
   for (const role of ['editor', 'publisher'] as const) {
     const email = `${role}@openbook.local`;
     if (await prisma.user.findUnique({ where: { email } })) continue;

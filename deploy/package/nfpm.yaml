@@ -1,0 +1,50 @@
+# nfpm config for the openbook .rpm/.deb. Built by scripts/package.sh, which stages files in
+# dist/package-stage and sets VERSION, RELEASE and ARCH.
+name: openbook
+arch: ${ARCH}
+platform: linux
+version: ${VERSION}
+release: ${RELEASE}
+section: web
+priority: optional
+maintainer: Luciano Furtado <lrfurtado@gmail.com>
+description: |
+  OpenBook flash cards and Doman-style reading books.
+  Web app and API served by one systemd service running as the openbook user.
+homepage: https://openbook.luciano.sh
+recommends:
+  - postgresql
+# runuser and nologin (util-linux), useradd/groupadd (shadow-utils / passwd).
+overrides:
+  rpm:
+    depends:
+      - util-linux
+      - shadow-utils
+  deb:
+    depends:
+      - util-linux
+      - passwd
+
+contents:
+  # Node runtime, API (with production dependencies) and the exported web app.
+  - src: dist/package-stage/lib
+    dst: /usr/lib/openbook
+    type: tree
+  - src: dist/package-stage/content/seed.json
+    dst: /usr/share/openbook/content/seed.json
+  - src: deploy/package/openbook.service
+    dst: /usr/lib/systemd/system/openbook.service
+  - src: deploy/package/openbook.env
+    dst: /etc/openbook/openbook.env
+    type: config|noreplace
+    file_info:
+      mode: 0640
+  - src: deploy/package/openbook-seed
+    dst: /usr/sbin/openbook-seed
+    file_info:
+      mode: 0755
+
+scripts:
+  postinstall: deploy/package/postinstall.sh
+  preremove: deploy/package/preremove.sh
+  postremove: deploy/package/postremove.sh

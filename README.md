@@ -36,6 +36,20 @@ npm test -w api                   # API integration tests against the dev Postgr
 cd apps/mobile && npx tsc --noEmit && npx expo lint
 ```
 
+## Packages (.rpm / .deb)
+
+```sh
+npm run package         # both; or package:rpm / package:deb → dist/packages/ (needs docker for nfpm)
+```
+
+The package bundles its own Node runtime, the API and the exported web app, served together by
+`openbook.service` as the `openbook` system user on one port (`/` web app, `/v1` API). It needs
+PostgreSQL. After installing:
+
+1. Set `DATABASE_URL` (and optionally `PORT`, default 3000) in `/etc/openbook/openbook.env`.
+2. `systemctl enable --now openbook` — migrations run on every start.
+3. `openbook-seed` — loads the bundled packs and books (set `SEED_ADMIN_PASSWORD` first for CMS accounts).
+
 ## Content
 
 `node apps/api/scripts/fetch-content.mjs` resolves every card in `content/source.json` to a Wikimedia Commons

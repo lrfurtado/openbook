@@ -1,0 +1,18 @@
+[Unit]
+Description=OpenBook web frontend (Expo web dev server)
+After=network-online.target openbook-api.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=@REPO@/apps/mobile
+Environment=PATH=@NODE_BIN@:/usr/local/bin:/usr/bin:/bin
+Environment=BROWSER=none
+Environment=EXPO_PUBLIC_API_URL=http://localhost:@API_PORT@/v1
+ExecStartPre=@NODE_BIN@/npm run build -w @openbook/shared --prefix @REPO@
+ExecStart=@NODE_BIN@/npx expo start --web --port 8081
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

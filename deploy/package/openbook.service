@@ -1,0 +1,49 @@
+[Unit]
+Description=OpenBook (web app and API)
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=openbook
+Group=openbook
+WorkingDirectory=/usr/lib/openbook/api
+EnvironmentFile=/etc/openbook/openbook.env
+Environment=NODE_ENV=production
+Environment=HOME=/var/lib/openbook
+Environment=OPENBOOK_WEB_DIR=/usr/lib/openbook/web
+Environment=OPENBOOK_SEED_FILE=/usr/share/openbook/content/seed.json
+# The packaged Prisma migration engine; Prisma must never try to download one at runtime.
+Environment=PRISMA_SCHEMA_ENGINE_BINARY=/usr/lib/openbook/api/node_modules/@prisma/engines/schema-engine
+Environment=CHECKPOINT_DISABLE=1
+Environment=PRISMA_HIDE_UPDATE_MESSAGE=1
+# Bring the database schema up to date before every start (no-op when current).
+ExecStartPre=/usr/lib/openbook/node node_modules/prisma/build/index.js migrate deploy
+ExecStart=/usr/lib/openbook/node dist/main.js
+Restart=on-failure
+RestartSec=5
+StateDirectory=openbook
+UMask=0077
+
+# Hardening: the service only needs to read its files, talk to Postgres and listen on PORT.
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+SystemCallArchitectures=native
+CapabilityBoundingSet=
+
+[Install]
+WantedBy=multi-user.target
