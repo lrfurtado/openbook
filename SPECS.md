@@ -6,7 +6,7 @@ OpenBook (working title) is a cross-platform (iOS, Android, Web) **Expo / React 
 "Bits of Intelligence" flash cards, inspired by the method Glenn Doman developed. Parents download official
 card packs (Nature & Science, Everyday Objects) or make their own cards from photos. They then run short,
 cheerful sessions where cards flash by quickly: a large realistic image, an optional name in big red bold
-text, the parent's recorded voice, and a small fact caption meant for the parent. A guided scheduler runs
+text, the parent's recorded voice or the device's read-aloud voice, and a small fact caption meant for the parent. A guided scheduler runs
 the classic program: each set is shown 3× a day for N days, then the whole set is retired. The app also
 includes **Doman-style books** from the reading part of the program. Each text page (large type, red at
 first, few words) is followed by its picture on a separate page. There are official books, homemade books
@@ -54,6 +54,7 @@ private deck sharing and an admin CMS. It is free with no ads, and it collects n
 | Media storage | `expo-file-system` on native; IndexedDB / Cache Storage on web, behind one `MediaStore` adapter |
 | Images | `expo-image` (caching, fast crossfade transitions) |
 | Audio | `expo-audio` for recording and playback (web uses MediaRecorder) |
+| Read aloud | `expo-speech` using on-device voices only (§4.13) |
 | Camera / photos | `expo-image-picker` + `expo-image-manipulator` (crop/resize) |
 | Display | `expo-screen-orientation`, `expo-keep-awake`, `expo-navigation-bar` / status bar hidden; Fullscreen API on web |
 | Notifications | `expo-notifications` (local reminders on native; no reminders on web in v1) |
@@ -166,6 +167,7 @@ private deck sharing and an admin CMS. It is free with no ads, and it collects n
 - FR-24: **Advancing:** auto-advance with speed adjustable from **0.5 s to 30 s per card (default 10 s)**, plus
   **tap / swipe / arrow key / space** to advance manually. Manual input resets the auto timer.
   - When a voice recording is longer than the interval, auto-advance waits for the clip to finish, up to 3 s.
+  - The device voice has its own rule: auto-advance waits for it to finish, with no fixed cap (FR-86).
 - FR-25: **Session size** comes from the profile setting (5–20, default 10) and is capped by the size of the
   set.
 - FR-26: Card order is **shuffled every session** (Fisher-Yates). The same card never appears twice in a row
@@ -199,7 +201,7 @@ private deck sharing and an admin CMS. It is free with no ads, and it collects n
 - FR-40: **Multiple child profiles** with a nickname, an avatar (picked from built-in icons) and an optional
   birth month/year. No photos of children and no full names.
 - FR-41: Each profile has its own settings: name display mode, fact caption, session size, speed, audio
-  on/off, N days, max active sets, reminder times.
+  on/off, read-aloud switches for cards and books (FR-83), N days, max active sets, reminder times.
 - FR-42: **Progress tracking:** a session log (timestamp, set, cards shown, completed flag), daily completion
   and **streaks** (consecutive days with ≥1 completed session). There is no quizzing or accuracy measure.
 - FR-43: **Accounts are optional.** Email/password signup with email verification and password reset.
@@ -279,9 +281,9 @@ private deck sharing and an admin CMS. It is free with no ads, and it collects n
   canvas as sessions. It is **parent-paced by default** (tap / swipe / arrow keys), with optional
   auto-advance (2–10 s per page, default 4 s).
 - FR-68: **Parent voice recording per page** reuses the recording tools from §4.5, including bulk record
-  mode across all pages of a book. When recordings exist, they play as each text page appears.
+  mode across all pages of a book. When recordings exist, they play as each text page appears. Other pages use the device voice (§4.13).
 - FR-69: Optional **word highlighting**: during playback or manual reading, the parent can tap a word to
-  highlight it. Timed highlighting synced to audio is out of scope for v1.
+  highlight it. Timed highlighting synced to parent recordings is out of scope for v1. The device voice highlights words as it reads (FR-89).
 - FR-70: Leaving and closing works as in sessions (long-press corner). The reader remembers the last page,
   and the next reading starts from the cover.
 
@@ -311,6 +313,52 @@ private deck sharing and an admin CMS. It is free with no ads, and it collects n
   device unless sync is on, are stored encrypted at rest on the server, are only served through signed
   URLs, and are never used in catalog or analytics. Before a book with own photos is shared, a confirmation
   warns that the photos will be visible to recipients.
+
+### 4.13 Read Aloud (Device Voice)
+Card names and book pages are read aloud by the device's built-in text-to-speech, so content has a voice
+before a parent has recorded anything.
+
+#### Voice and source
+- FR-79: **Engine:** device text-to-speech through `expo-speech` on every platform. No server generates or
+  stores speech, and no audio is downloaded.
+- FR-80: **Offline and privacy:** only voices that run on the device may be used, so reading works with no
+  network and text never leaves the device (NFR-1, NFR-7). On web this means `localService` voices only. On
+  native, the M4.6 platform check sets the rule. If a device has no eligible voice, content stays silent and
+  the child's settings show that no voice is available.
+- FR-81: **One voice:** the best installed English voice at normal speed, chosen per device and not synced.
+  Parents cannot change the voice or the speed in v1, and there are no pronunciation overrides.
+- FR-82: **Source order** for each card name or book page:
+  1. The parent's recording, if one exists and `audio` is on.
+  2. The device voice, if the child's switch for cards or books is on and the item is not silenced (FR-84).
+  3. Otherwise, silence.
+
+#### Settings
+- FR-83: Each child has separate **Read cards aloud** and **Read books aloud** switches, both on by default,
+  including for profiles created before this feature. The existing `audio` setting controls parent
+  recordings only.
+- FR-84: Parent-created cards and homemade or generated books are read aloud like official content. Their
+  editors have a **Read aloud** switch (default on) that silences the device voice for that card or whole
+  book. It does not silence parent recordings. Official content has no such switch.
+
+#### Cards
+- FR-85: Only the card's **name** is read, never its facts. Reading starts when the card appears, including
+  in `hidden` name mode. In `after` name mode it starts when the name appears.
+- FR-86: Auto-advance waits for **both** the speed setting and the end of speech, with no fixed cap, so at
+  fast speeds a card can stay longer than the setting. A safety timeout (§9.5) applies only if the voice
+  fails to report that it finished. Manual advance stops speech at once.
+
+#### Books
+- FR-87: When a page with text opens (`text` and `spread` pages), its text is read automatically, and a
+  **replay** button reads it again. The cover reads the title. `picture` and `end` pages are silent.
+- FR-88: Reading never turns the page, and the reader stays parent-paced by default. Turning a page stops
+  speech. If `pageAutoAdvanceSeconds` is set, its timer starts when speech ends.
+- FR-89: **Word highlighting:** each word is highlighted as it is spoken, driven by the voice's word-boundary
+  events. Where those events are missing, the page is read without highlighting; timing is never estimated.
+  This is separate from tap-to-highlight (FR-69), and both can show at once.
+
+#### Interruptions
+- FR-90: Pausing a session or the reader stops speech. Resuming restarts the current name or page from its
+  beginning, on every platform, because Android has no speech pause. Leaving the screen stops speech.
 
 ---
 
@@ -408,8 +456,10 @@ interface ChildProfile {
     nameDisplay: "hidden" | "below" | "after";
     factCaption: boolean;
     sessionSize: number;     // 5..20, default 10
-    secondsPerCard: number;  // 0.5..3, default 1
-    audio: boolean;
+    secondsPerCard: number;  // 0.5..30, default 10
+    audio: boolean;          // parent recordings
+    readAloudCards: boolean; // device voice for cards, default true
+    readAloudBooks: boolean; // device voice for books, default true
     daysPerSet: number;      // N, 1..10, default 5
     sessionsPerDay: number;  // default 3
     maxActiveSets: number;   // 1..5, default 3
@@ -508,7 +558,8 @@ interface KnownWord {         // per child
 
 `VoiceRecording.kind` is extended to `"name" | "fact" | "page"` (with `pageId`). `ChildProfile.settings`
 gains `bookLayout`, `readingsPerDay` (default 2), `daysPerBook` (default 5), `maxActiveBooks` (default 2),
-and `pageAutoAdvanceSeconds` (null = manual, 2–10).
+and `pageAutoAdvanceSeconds` (null = manual, 2–10). User `Card`s and homemade or generated `Book`s gain
+`readAloud?: boolean` (absent means on; FR-84).
 
 ### 6.4 Server-only entities
 `User` (email, passwordHash, emailVerifiedAt, role: `parent|editor|publisher`), `RefreshToken`,
@@ -619,8 +670,9 @@ Deep links: `openbook://share/<code>` and `https://<domain>/s/<code>`.
 2. Fisher-Yates shuffle. If the first card matches the last card of the previous session, swap it with a
    random other card.
 3. Preload images (and voice clips) for every card. Start only when they are all decoded.
-4. For each card: show the image → (name, depending on `nameDisplay`) → play the voice clip → wait
-   `max(secondsPerCard, min(clipDuration, 3s))` or for manual advance.
+4. For each card: show the image → (name, depending on `nameDisplay`) → play the voice clip or device voice
+   → wait `max(secondsPerCard, min(clipDuration, 3s))` for a clip, or the §9.5 hold for the device voice, or
+   for manual advance.
 
 ### 9.2 Day rollover & retirement (runs on app foreground and at local midnight)
 ```
@@ -653,6 +705,18 @@ for each active set:
 - Conflicts are resolved per record with last-write-wins. Arrays (e.g. `cardIds`) are replaced whole.
 - Sync runs on sign-in, on app foreground, after local changes (debounced 10 s) and on manual refresh.
 
+### 9.5 Read aloud
+1. Pick the source using FR-82. Call `Speech.stop()` before every `speak()`, because `speak()` otherwise
+   queues behind any speech still playing.
+2. Give each utterance a token, and ignore callbacks from any token that is no longer current.
+3. **Card hold:** advance once `secondsPerCard` has elapsed and speech has ended.
+4. **Safety timeout:** `speechSafetyMs(text) = 2000 + 200 × text.length` ms, started at `speak()`. If no
+   `onDone`, `onStopped` or `onError` arrives by then, treat speech as finished. It is far longer than normal
+   speech, so it only acts on a failure. `onError` is not documented for web, so the timeout is what protects
+   web sessions from hanging.
+5. **Highlighting:** map each `onBoundary` `charIndex` to a word index using the same segmentation as
+   `tokenize`, and clear the highlight when speech ends.
+
 ---
 
 ## 10. Visual Design
@@ -674,8 +738,8 @@ for each active set:
 
 | Layer | Tooling | Scope |
 |---|---|---|
-| Unit | Jest | Scheduler and retirement rules, shuffle, sync merge, reducers / RTK slices, book page sequencing, text auto-fit, vocabulary extraction, stage validation |
-| Component | React Native Testing Library | Session screen behaviour (advance, name modes, caption), PIN gate, card editor |
+| Unit | Jest | Scheduler and retirement rules, shuffle, sync merge, reducers / RTK slices, book page sequencing, text auto-fit, vocabulary extraction, stage validation, read-aloud source selection, safety timeout, word-index mapping |
+| Component | React Native Testing Library | Session screen behaviour (advance, name modes, caption, speech holds with a fake speech engine), PIN gate, card editor |
 | E2E native | Maestro | Onboarding → download pack → run session; record voice; create card; share/import; create a book from a template → read → print |
 | E2E web | Playwright | Same critical flows on web, plus offline mode via service worker |
 | API | Jest + Supertest + Testcontainers (Postgres, MinIO) | Auth, catalog, sync, sharing, admin permissions |
@@ -720,6 +784,51 @@ readiness, print/export PDF, official books in the CMS and catalog.
 reads it 2× a day for 5 simulated days until it retires to the Bookshelf, and prints it to PDF.
 Generating a book from a 10-card set gives 10 editable text+picture pairs.
 
+### M4.6: Read Aloud
+Device-voice reading of card names and book pages (§4.13). It does not depend on parent recording, which is
+still unbuilt; the playback layer leaves a place for it so FR-82 needs no redesign. Cards ship first, then
+books, each on iOS, Android and Web together.
+
+**Step 0: Platform check (before feature work).** Add `expo-speech` with `npx expo install` and test on iOS,
+Android, desktop Chrome and Safari. Record the results here, since they settle the items below:
+- Which voices work with the network off. `expo-speech` reports no local/remote flag on native, so Android
+  needs its own rule (FR-80).
+- Time from `speak()` to first sound on the reference devices, which sets the AC-16 target.
+- Whether word-boundary events fire for the chosen voice on each platform (FR-89).
+- Physical iPhones in silent mode: Expo documents no sound. Confirm whether that can be overridden; if not,
+  add a hint to the child's settings.
+- Whether web browsers allow speech on later cards and pages, after the one tap that started the session.
+- Whether `onDone` fires reliably, including for the longest book page allowed.
+
+**Step 1: Shared logic and settings** (`packages/shared`). Add `readAloudCards` and `readAloudBooks` to
+`ChildSettings` and its defaults; `readAloud` to `Card` and `Book`; and pure functions for FR-82 source
+selection, `speechSafetyMs` and `wordIndexAt`, with unit tests. Merge stored settings over the defaults when
+loading a child in `apps/mobile/src/lib/repo.ts`, since settings are stored as JSON and existing profiles
+will not have the new fields.
+
+**Step 2: Narrator** (`apps/mobile/src/features/narration/`). One interface over `expo-speech`: `speak`,
+`stop`, voice selection, utterance tokens and the safety timeout, with the parent-recording branch stubbed.
+
+**Step 3: Cards (first release).** Speak on card and name beat in
+`apps/mobile/src/app/(child)/[childId]/session/[setId].tsx`, replace the fixed auto-advance timer with the
+§9.5 hold, and stop speech on advance, pause and exit. Add the two switches to the child settings screen, the
+per-card switch to `(parent)/library/card/[cardId].tsx`, and strings to `apps/mobile/src/i18n/en.ts`.
+
+**Step 4: Book reading.** In `(child)/[childId]/read/[bookId].tsx`, read text pages and the cover title, add
+the replay button, start any page auto-advance timer after speech ends, and stop speech on page turn. Add the
+per-book switch to `(parent)/books/[bookId]/edit.tsx`.
+
+**Step 5: Word highlighting.** Render the spoken word in `apps/mobile/src/components/BookPage.tsx` from
+boundary events, with the no-event fallback. It is the last step so that platform problems cannot hold up
+reading itself.
+
+**Step 6: Verification.** Component and E2E tests against a fake speech engine, because CI has no real
+voices, then a manual pass of the acceptance criteria on the Step 0 device list.
+
+**Done when:** in airplane mode on iOS, Android and Web, a card session reads each name and never cuts one
+off, and a homemade book reads each page aloud with replay, highlighting where the platform supports it, and
+AC-15 to AC-22 pass.
+
 ### M5: Accounts & Sync
 Email/password auth, two-way sync incl. media, merging data from before sign-in, export, account deletion.
 **Done when:** a change made offline on device A shows up on device B after reconnecting. Deletion purges
@@ -739,7 +848,7 @@ listings.
 ## 13. Acceptance Criteria (selected)
 
 - AC-1: With the device offline, a parent can start and finish a session for any downloaded pack or custom deck.
-- AC-2: At 1 s/card, the measured time between cards stays within ±50 ms of the setting.
+- AC-2: At 1 s/card with read-aloud off, the measured time between cards stays within ±50 ms of the setting.
 - AC-3: Changing `nameDisplay` takes effect in the next session with no restart.
 - AC-4: After N active days, the set appears under Retired and a new set of the configured size is active.
 - AC-5: A voice recording plays within 100 ms of its card appearing.
@@ -752,6 +861,17 @@ listings.
 - AC-12: A book's vocabulary and readiness % update straight after its text is edited.
 - AC-13: The exported PDF keeps the page order, stage colour and stage text size.
 - AC-14: Homemade-book photos are never requested from a public (unsigned) URL.
+- AC-15: With the network off, cards and books are read aloud, and reading makes no network requests.
+- AC-16: The device voice starts within 500 ms of a card appearing on the reference devices (a provisional
+  target, to be confirmed by the M4.6 platform check).
+- AC-17: At 0.5 s/card, no card advances before its name has finished being spoken. If the voice never
+  reports finishing, the session still moves on when the safety timeout expires.
+- AC-18: A card or page with a parent recording plays only the recording while `audio` is on.
+- AC-19: Turning off Read aloud on a parent-created card or book silences only that item's device voice.
+- AC-20: The card and book switches work independently, and profiles created before this feature have both on.
+- AC-21: Manual advance or a page turn stops speech at once, and speech never overlaps or queues.
+- AC-22: Where word-boundary events exist, the highlighted word matches the spoken word. Where they do not,
+  the page is read with no highlighting.
 
 ---
 
@@ -760,7 +880,8 @@ listings.
 1. Final app name and domain (`openbook` is a working title).
 2. Hosting provider for the API, DB and object storage (AWS vs. Cloudflare R2 + Fly/Render).
 3. Who writes and fact-checks the official facts for L1–L3 (in-house vs. contractors)?
-4. Should official recorded narration be added later as a fallback when there is no parent voice?
+4. Should official recorded narration be added later to replace the device voice (§4.13) when there is no
+   parent voice?
 5. Should later versions add Art & History and Geography & Culture packs?
 6. Should the other earlier steps of the reading program (single-word cards → couplets → phrases →
    sentences) be added as card types, so that known words fill in automatically?
