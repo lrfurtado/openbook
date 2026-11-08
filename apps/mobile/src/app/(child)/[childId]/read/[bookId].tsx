@@ -1,4 +1,15 @@
-import { isCompleted, pageSequence, PAGE_TURN_MS, type Book, type BookLayout } from '@openbook/shared';
+import {
+  DEFAULT_CHILD_SETTINGS,
+  isCompleted,
+  pageNarration,
+  pageSequence,
+  PAGE_TURN_MS,
+  selectNarration,
+  wordIndexAt,
+  type Book,
+  type BookLayout,
+  type ChildSettings,
+} from '@openbook/shared';
 import { useLocalSearchParams } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -6,6 +17,7 @@ import { useTranslation } from 'react-i18next';
 import { Animated, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { BookPageView } from '@/components/BookPage';
 import { ExitCorner, PauseOverlay, RotateHint } from '@/components/Immersive';
+import { narrator } from '@/features/narration';
 import { preloadImages } from '@/features/preload';
 import { PREVIEW_CHILD } from '@/features/reader';
 import { useAdvanceInput, useImmersive } from '@/hooks/useImmersive';
@@ -35,6 +47,10 @@ export default function Reader() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [highlighted, setHighlighted] = useState<Set<number>>(new Set());
+  const [settings, setSettings] = useState<ChildSettings>(DEFAULT_CHILD_SETTINGS);
+  const [finishedRun, setFinishedRun] = useState<string | null>(null);
+  const [spokenWord, setSpokenWord] = useState<number | null>(null);
+  const [replays, setReplays] = useState(0);
   const maxIndex = useRef(0);
   const startedAt = useRef(nowIso());
   const finished = useRef(false);
@@ -42,10 +58,12 @@ export default function Reader() {
 
   useEffect(() => {
     (async () => {
+      void narrator.voice();
       const [b, ch] = await Promise.all([getBook(bookId), childId === PREVIEW_CHILD ? null : getChild(childId)]);
       if (!b) return goBack(childId === PREVIEW_CHILD ? '/home' : `/${childId}/bookshelf`);
       setLayout(layoutParam ?? ch?.settings.bookLayout ?? b.layout);
       setAutoSeconds(ch?.settings.pageAutoAdvanceSeconds ?? null);
+      if (ch) setSettings(ch.settings);
       const uris = await Promise.all(b.pages.map((p) => (p.image?.localPath ? media.resolve(p.image.localPath) : null)));
       await preloadImages(uris.filter((u): u is string => !!u));
       startedAt.current = nowIso();
@@ -90,11 +108,35 @@ export default function Reader() {
     [paused, sequence.length, finish, opacity],
   );
 
+  // FR-87..90: read the page when it opens or on replay. Turning the page or pausing re-runs this and stops speech.
+  const narration = book && sequence[index] ? pageNarration(book, sequence[index]) : null;
+  const spokenText =
+    book && narration && selectNarration(settings, 'books', { hasRecording: narration.hasRecording, readAloud: book.readAloud }) === 'device'
+      ? narration.text
+      : null;
+  const run = `${index}:${replays}`;
+  const speaking = spokenText !== null && !paused && finishedRun !== run;
   useEffect(() => {
-    if (!autoSeconds || paused || !book) return;
+    if (spokenText === null || paused) return;
+    const cancel = narrator.speak(spokenText, {
+      onBoundary: (charIndex) => setSpokenWord(wordIndexAt(spokenText, charIndex)),
+      onFinished: () => {
+        setSpokenWord(null);
+        setFinishedRun(run);
+      },
+    });
+    return () => {
+      cancel();
+      setSpokenWord(null);
+    };
+  }, [spokenText, paused, run]);
+
+  // FR-88: the optional page timer starts once speech has ended.
+  useEffect(() => {
+    if (!autoSeconds || paused || !book || speaking) return;
     const timer = setTimeout(() => go(index + 1), autoSeconds * 1000);
     return () => clearTimeout(timer);
-  }, [autoSeconds, paused, book, index, go]);
+  }, [autoSeconds, paused, book, index, go, speaking]);
 
   const pan = useAdvanceInput(
     () => go(index + 1),
@@ -114,6 +156,7 @@ export default function Reader() {
             width={width}
             height={height}
             highlighted={highlighted}
+            spokenWord={spokenWord}
             onWordPress={(i) =>
               setHighlighted((h) => {
                 const next = new Set(h);
@@ -131,6 +174,11 @@ export default function Reader() {
           <Text style={styles.backText}>‹</Text>
         </Pressable>
       )}
+      {spokenText !== null && (
+        <Pressable accessibilityLabel={t('reader.replay')} onPress={() => setReplays((n) => n + 1)} style={styles.replay}>
+          <Text style={styles.replayText}>🔊</Text>
+        </Pressable>
+      )}
       <ExitCorner onLongPress={() => setPaused(true)} />
       {paused && <PauseOverlay onResume={() => setPaused(false)} onExit={finish} />}
       {portrait && <RotateHint />}
@@ -144,4 +192,6 @@ const styles = StyleSheet.create({
   indicator: { position: 'absolute', right: 14, bottom: 8, fontSize: 11, color: '#C8C8C8' },
   back: { position: 'absolute', left: 0, bottom: 0, width: 64, height: 64, alignItems: 'center', justifyContent: 'center' },
   backText: { fontSize: 32, color: '#E0E0E0' },
+  replay: { position: 'absolute', left: '50%', marginLeft: -32, bottom: 0, width: 64, height: 64, alignItems: 'center', justifyContent: 'center' },
+  replayText: { fontSize: 26, opacity: 0.45 },
 });

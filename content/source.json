@@ -49,6 +49,10 @@
         {
           "slug": "vehicles",
           "name": "Vehicles"
+        },
+        {
+          "slug": "home",
+          "name": "Home"
         }
       ]
     }
@@ -116,7 +120,8 @@
           "facts": [
             "The toucan has a very big beak.",
             "Toucans live in South America."
-          ]
+          ],
+          "file": "006_Toco_toucan_in_Encontro_das_Águas_State_Park_Photo_by_Giles_Laurent.jpg"
         },
         {
           "wiki": "Ruby-throated hummingbird",
@@ -619,6 +624,1158 @@
           ]
         }
       ]
+    },
+    {
+      "key": "home-furniture-1",
+      "category": "everyday-objects",
+      "subcategory": "home",
+      "title": "Around the House",
+      "description": "Furniture and everyday things in a home, in real photographs.",
+      "cards": [
+        {
+          "wiki": "Table",
+          "file": "A modern dinner set, table and chairs in a beach house, Auckland - 1028.jpg",
+          "name": "Table",
+          "facts": [
+            "A table has a flat top.",
+            "We eat at a table."
+          ]
+        },
+        {
+          "wiki": "Chair",
+          "file": "Set of fourteen side chairs MET DP110780.jpg",
+          "name": "Chair",
+          "facts": [
+            "We sit on a chair.",
+            "A chair has four legs."
+          ]
+        },
+        {
+          "wiki": "Bed",
+          "file": "2022-08-19 12 28 06 King-size Caitbrook Gray Full Storage Bed with a Medium to Firm Luxury Cooling Beautyrest Black mattress in the master bedroom of a house along Aquetong Lane in the Mountainview section of Ewing Township, Mercer County, New Jersey.jpg",
+          "name": "Bed",
+          "facts": [
+            "We sleep in a bed.",
+            "A bed is soft."
+          ]
+        },
+        {
+          "wiki": "Door",
+          "file": "Quebec ville 00001 05.jpg",
+          "name": "Door",
+          "facts": [
+            "A door opens and closes.",
+            "We walk through a door."
+          ]
+        },
+        {
+          "wiki": "Window",
+          "file": "Willow Chapel School Capon Springs WV 2009 07 19 15.jpg",
+          "name": "Window",
+          "facts": [
+            "We look out of a window.",
+            "Light comes in a window."
+          ]
+        },
+        {
+          "wiki": "Sofa",
+          "file": "Sofá.jpg",
+          "name": "Sofa",
+          "facts": [
+            "We sit on a sofa.",
+            "A sofa is big and soft."
+          ]
+        },
+        {
+          "wiki": "Clock",
+          "file": "Echo Wall Clock (49383378912).jpg",
+          "name": "Clock",
+          "facts": [
+            "A clock tells the time.",
+            "A clock has two hands."
+          ]
+        },
+        {
+          "wiki": "Pillow",
+          "file": "Average White Pillow.jpg",
+          "name": "Pillow",
+          "facts": [
+            "We rest our head on a pillow.",
+            "A pillow is soft."
+          ]
+        },
+        {
+          "wiki": "Blanket",
+          "file": "Grey knitted blanket.jpg",
+          "name": "Blanket",
+          "facts": [
+            "A blanket keeps us warm.",
+            "We put a blanket on the bed."
+          ]
+        },
+        {
+          "wiki": "Lamp",
+          "file": "ORGEL table lamp.jpg",
+          "name": "Lamp",
+          "facts": [
+            "A lamp gives light.",
+            "We turn on a lamp at night."
+          ]
+        },
+        {
+          "wiki": "Rug",
+          "file": "Wollteppich 1.jpg",
+          "name": "Rug",
+          "facts": [
+            "A rug goes on the floor.",
+            "A rug feels soft on our feet."
+          ]
+        },
+        {
+          "wiki": "Curtains",
+          "file": "Gordijnen aan venster.JPG",
+          "name": "Curtains",
+          "facts": [
+            "Curtains hang by the window.",
+            "We close the curtains at night."
+          ]
+        },
+        {
+          "wiki": "Stairs",
+          "file": "Casona recuperada por Socovesa, calle General Lagos, Valdivia.jpg",
+          "name": "Stairs",
+          "facts": [
+            "We walk up the stairs.",
+            "We hold the rail on the stairs."
+          ]
+        },
+        {
+          "wiki": "Desk",
+          "file": "Bureau table MET DP108643.jpg",
+          "name": "Desk",
+          "facts": [
+            "We write at a desk.",
+            "A desk has drawers."
+          ]
+        },
+        {
+          "wiki": "Stool",
+          "file": "Vintage wooden farmers stool. Tegernsee, Bavaria, Germany.jpeg",
+          "name": "Stool",
+          "facts": [
+            "We sit on a stool.",
+            "A stool has no back."
+          ]
+        },
+        {
+          "wiki": "Bookcase",
+          "file": "Library O.B.M.jpg",
+          "name": "Bookcase",
+          "facts": [
+            "A bookcase holds books.",
+            "A bookcase has shelves."
+          ]
+        },
+        {
+          "wiki": "Dresser",
+          "file": "Chest, Federal bowfront style, New England, 1790-1820 - Dedham Historical Society - Dedham Massachusetts - DSC04193.jpg",
+          "name": "Dresser",
+          "facts": [
+            "A dresser holds our clothes.",
+            "A dresser has drawers."
+          ]
+        },
+        {
+          "wiki": "Wardrobe",
+          "file": "Judges' Lodgings 2014 GLAM Judges' Bedroom 2600.JPG",
+          "name": "Wardrobe",
+          "facts": [
+            "A wardrobe holds our clothes.",
+            "A wardrobe has doors."
+          ]
+        },
+        {
+          "wiki": "Crib",
+          "file": "Baby Crib (49935766018).jpg",
+          "name": "Crib",
+          "facts": [
+            "A baby sleeps in a crib.",
+            "A crib has bars on the sides."
+          ]
+        },
+        {
+          "wiki": "Television",
+          "file": "A flat-screen television.jpg",
+          "name": "Television",
+          "facts": [
+            "We watch shows on a television.",
+            "A television has a screen."
+          ]
+        },
+        {
+          "wiki": "Telephone",
+          "file": "Landline Telephone Set.jpg",
+          "name": "Telephone",
+          "facts": [
+            "We talk on a telephone.",
+            "A telephone rings."
+          ]
+        },
+        {
+          "wiki": "Remote Control",
+          "file": "Television remote control - unbranded-4028.jpg",
+          "name": "Remote Control",
+          "facts": [
+            "A remote control changes the channel.",
+            "We press the buttons."
+          ]
+        },
+        {
+          "wiki": "Light Switch",
+          "file": "Rocker light switch.jpg",
+          "name": "Light Switch",
+          "facts": [
+            "A light switch turns on the light.",
+            "We push it up and down."
+          ]
+        },
+        {
+          "wiki": "Key",
+          "file": "Solex 99 30 padlock with keys (DSCF2659).jpg",
+          "name": "Key",
+          "facts": [
+            "A key opens a lock.",
+            "We use a key to open the door."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "home-kitchen-1",
+      "category": "everyday-objects",
+      "subcategory": "home",
+      "title": "In the Kitchen",
+      "description": "Things we eat with and cook with, in real photographs.",
+      "cards": [
+        {
+          "wiki": "Plate",
+          "file": "Empty table setting plate fork knife (42585288225).jpg",
+          "name": "Plate",
+          "facts": [
+            "We put food on a plate.",
+            "A plate is round and flat."
+          ]
+        },
+        {
+          "wiki": "Bowl",
+          "file": "Light gray ceramic bowl of honey cereals (4268971800).jpg",
+          "name": "Bowl",
+          "facts": [
+            "We eat cereal from a bowl.",
+            "A bowl is round and deep."
+          ]
+        },
+        {
+          "wiki": "Mug",
+          "file": "Mug of Tea.JPG",
+          "name": "Mug",
+          "facts": [
+            "We drink from a mug.",
+            "A mug has a handle."
+          ]
+        },
+        {
+          "wiki": "Glass",
+          "file": "No. 193 Water Tumbler, 1891 (CH 18732789).jpg",
+          "name": "Glass",
+          "facts": [
+            "We drink water from a glass.",
+            "We can see through a glass."
+          ]
+        },
+        {
+          "wiki": "Fork",
+          "file": "Assorted forks.jpg",
+          "name": "Fork",
+          "facts": [
+            "We eat with a fork.",
+            "A fork has sharp points."
+          ]
+        },
+        {
+          "wiki": "Spoon",
+          "file": "Soup Spoon.jpg",
+          "name": "Spoon",
+          "facts": [
+            "We eat soup with a spoon.",
+            "A spoon is round at the end."
+          ]
+        },
+        {
+          "wiki": "Knife",
+          "file": "Old Swiss table knives.JPG",
+          "name": "Knife",
+          "facts": [
+            "We cut food with a knife.",
+            "A knife is sharp, so grown-ups help."
+          ]
+        },
+        {
+          "wiki": "Napkin",
+          "file": "Folded napkin 01.jpg",
+          "name": "Napkin",
+          "facts": [
+            "We wipe our mouth with a napkin.",
+            "A napkin goes on our lap."
+          ]
+        },
+        {
+          "wiki": "Pot",
+          "file": "All-Clad Copper Core pots.jpeg",
+          "name": "Pot",
+          "facts": [
+            "We cook soup in a pot.",
+            "A pot gets hot."
+          ]
+        },
+        {
+          "wiki": "Frying Pan",
+          "file": "Frying Pan 2 2019-03-21.jpg",
+          "name": "Frying Pan",
+          "facts": [
+            "We cook eggs in a frying pan.",
+            "A frying pan has a long handle."
+          ]
+        },
+        {
+          "wiki": "Refrigerator",
+          "file": "Refrigerator and microwave.jpg",
+          "name": "Refrigerator",
+          "facts": [
+            "A refrigerator keeps food cold.",
+            "We keep milk in a refrigerator."
+          ]
+        },
+        {
+          "wiki": "Stove",
+          "file": "Sporák plynový 4 hořáky s elektrickou troubou - Fagor 03.jpg",
+          "name": "Stove",
+          "facts": [
+            "We cook food on a stove.",
+            "A stove is hot."
+          ]
+        },
+        {
+          "wiki": "Microwave",
+          "file": "Microwave Oven.jpg",
+          "name": "Microwave",
+          "facts": [
+            "A microwave heats food fast.",
+            "A microwave beeps when it is done."
+          ]
+        },
+        {
+          "wiki": "Toaster",
+          "file": "OK. Toaster.jpg",
+          "name": "Toaster",
+          "facts": [
+            "A toaster makes toast.",
+            "Bread goes in a toaster."
+          ]
+        },
+        {
+          "wiki": "Kettle",
+          "file": "2023 Czajnik elektryczny N'OVEEN.jpg",
+          "name": "Kettle",
+          "facts": [
+            "A kettle boils water.",
+            "A kettle gets hot."
+          ]
+        },
+        {
+          "wiki": "Sink",
+          "file": "Luxury sink.jpg",
+          "name": "Sink",
+          "facts": [
+            "We wash dishes in the sink.",
+            "Water comes out over the sink."
+          ]
+        },
+        {
+          "wiki": "Cutting Board",
+          "file": "Prkénko.jpg",
+          "name": "Cutting Board",
+          "facts": [
+            "We cut food on a cutting board.",
+            "A cutting board is flat."
+          ]
+        },
+        {
+          "wiki": "Spatula",
+          "file": "Non Stick Pan.jpg",
+          "name": "Spatula",
+          "facts": [
+            "A spatula flips food.",
+            "We use a spatula to cook."
+          ]
+        },
+        {
+          "wiki": "Ladle",
+          "file": "Ladle melamine 18j07.JPG",
+          "name": "Ladle",
+          "facts": [
+            "A ladle scoops soup.",
+            "A ladle has a long handle."
+          ]
+        },
+        {
+          "wiki": "Whisk",
+          "file": "Whisk (IMG 0265).jpg",
+          "name": "Whisk",
+          "facts": [
+            "A whisk mixes eggs.",
+            "We stir fast with a whisk."
+          ]
+        },
+        {
+          "wiki": "Blender",
+          "file": "Black & Decker Blender (2812539758).jpg",
+          "name": "Blender",
+          "facts": [
+            "A blender mixes fruit.",
+            "A blender makes a loud noise."
+          ]
+        },
+        {
+          "wiki": "Bottle",
+          "file": "Ecoglass bottle.jpg",
+          "name": "Bottle",
+          "facts": [
+            "A bottle holds water.",
+            "A bottle has a lid."
+          ]
+        },
+        {
+          "wiki": "Dishwasher",
+          "file": "Hotpoint Dishwasher Model HDA460-03AD, IMG02.jpg",
+          "name": "Dishwasher",
+          "facts": [
+            "A dishwasher washes the dishes.",
+            "We put dirty plates inside."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "home-bathroom-1",
+      "category": "everyday-objects",
+      "subcategory": "home",
+      "title": "In the Bathroom",
+      "description": "Things we use to get clean, in real photographs.",
+      "cards": [
+        {
+          "wiki": "Toilet",
+          "file": "McGuiresPensacolaAug2008Terlet.jpg",
+          "name": "Toilet",
+          "facts": [
+            "We use the toilet.",
+            "We flush the toilet after."
+          ]
+        },
+        {
+          "wiki": "Toilet Paper",
+          "file": "Toilet paper orientation over.jpg",
+          "name": "Toilet Paper",
+          "facts": [
+            "We wipe with toilet paper.",
+            "Toilet paper comes on a roll."
+          ]
+        },
+        {
+          "wiki": "Sink",
+          "file": "Separate Taps UK.jpg",
+          "name": "Sink",
+          "facts": [
+            "We wash our hands in the sink.",
+            "Water comes out of the tap."
+          ]
+        },
+        {
+          "wiki": "Faucet",
+          "file": "TSL Ribbons.jpg",
+          "name": "Faucet",
+          "facts": [
+            "Water comes out of a faucet.",
+            "We turn it on and off."
+          ]
+        },
+        {
+          "wiki": "Soap",
+          "file": "Клеопатра 150гр.jpg",
+          "name": "Soap",
+          "facts": [
+            "Soap cleans our hands.",
+            "Soap makes bubbles."
+          ]
+        },
+        {
+          "wiki": "Towel",
+          "file": "Steamy hot towel served to passengers on long haul flights.JPG",
+          "name": "Towel",
+          "facts": [
+            "We dry off with a towel.",
+            "A towel is soft."
+          ]
+        },
+        {
+          "wiki": "Toothbrush",
+          "file": "Cepillo Duralon.jpg",
+          "name": "Toothbrush",
+          "facts": [
+            "We brush our teeth with a toothbrush.",
+            "We brush in the morning and at night."
+          ]
+        },
+        {
+          "wiki": "Toothpaste",
+          "file": "Vitis Dentaid toothpaste tube, Hillegersberg, Rotterdam (2021) 01.jpg",
+          "name": "Toothpaste",
+          "facts": [
+            "Toothpaste cleans our teeth.",
+            "We squeeze it onto the brush."
+          ]
+        },
+        {
+          "wiki": "Bathtub",
+          "file": "Bathtub of Khan Pool Suite in Amantaka luxury Resort & Hotel in Luang Prabang Laos.jpg",
+          "name": "Bathtub",
+          "facts": [
+            "We take a bath in the bathtub.",
+            "We fill the bathtub with water."
+          ]
+        },
+        {
+          "wiki": "Shower",
+          "file": "KMM PFL 3rd St bathroom shower water pipe n metal shelves August 2021 SS2.jpg",
+          "name": "Shower",
+          "facts": [
+            "We wash in the shower.",
+            "Water sprays down from the shower."
+          ]
+        },
+        {
+          "wiki": "Shampoo",
+          "file": "A bottle of Aveeno Baby Wash & Shampoo 01.jpg",
+          "name": "Shampoo",
+          "facts": [
+            "Shampoo washes our hair.",
+            "We rinse it out with water."
+          ]
+        },
+        {
+          "wiki": "Sponge",
+          "file": "Sponge-viscose.jpg",
+          "name": "Sponge",
+          "facts": [
+            "A sponge soaks up water.",
+            "A sponge is soft and squishy."
+          ]
+        },
+        {
+          "wiki": "Comb",
+          "file": "Plastic comb, 2015-06-07.jpg",
+          "name": "Comb",
+          "facts": [
+            "A comb makes our hair neat.",
+            "A comb has many teeth."
+          ]
+        },
+        {
+          "wiki": "Hairbrush",
+          "file": "Расчёска складная.jpg",
+          "name": "Hairbrush",
+          "facts": [
+            "We brush our hair with a hairbrush.",
+            "A hairbrush has bristles."
+          ]
+        },
+        {
+          "wiki": "Hair Dryer",
+          "file": "Hairdryer 20101109.jpg",
+          "name": "Hair Dryer",
+          "facts": [
+            "A hair dryer dries our hair.",
+            "A hair dryer blows warm air."
+          ]
+        },
+        {
+          "wiki": "Nail Clippers",
+          "file": "Silver Nail Clippers.JPG",
+          "name": "Nail Clippers",
+          "facts": [
+            "Nail clippers cut our nails.",
+            "A grown-up helps us."
+          ]
+        },
+        {
+          "wiki": "Tissues",
+          "file": "Kleenex-small-box.jpg",
+          "name": "Tissues",
+          "facts": [
+            "We blow our nose with tissues.",
+            "Tissues come in a box."
+          ]
+        },
+        {
+          "wiki": "Bandage",
+          "file": "Plåster - Adhesive bandage - 2025.jpg",
+          "name": "Bandage",
+          "facts": [
+            "A bandage covers a cut.",
+            "A bandage sticks to our skin."
+          ]
+        },
+        {
+          "wiki": "Cotton Swabs",
+          "file": "Cotton swabs (or cotton buds) -in round container.jpg",
+          "name": "Cotton Swabs",
+          "facts": [
+            "Cotton swabs have soft ends.",
+            "A grown-up uses them."
+          ]
+        },
+        {
+          "wiki": "Plunger",
+          "file": "Plunger (13749016464).jpg",
+          "name": "Plunger",
+          "facts": [
+            "A plunger fixes a blocked toilet.",
+            "A plunger has a long handle."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "home-household-1",
+      "category": "everyday-objects",
+      "subcategory": "home",
+      "title": "Things We Use at Home",
+      "description": "Cleaning, laundry and everyday tools, in real photographs.",
+      "cards": [
+        {
+          "wiki": "Broom",
+          "file": "Lustenau-Sperger-Homemade broom-01ASD.jpg",
+          "name": "Broom",
+          "facts": [
+            "A broom sweeps the floor.",
+            "A broom has a long handle."
+          ]
+        },
+        {
+          "wiki": "Dustpan",
+          "file": "Shovelilo.jpg",
+          "name": "Dustpan",
+          "facts": [
+            "A dustpan picks up dirt.",
+            "We use it with a broom."
+          ]
+        },
+        {
+          "wiki": "Mop",
+          "file": "Mop, three different mop handles.jpg",
+          "name": "Mop",
+          "facts": [
+            "A mop cleans the floor.",
+            "We wet a mop with water."
+          ]
+        },
+        {
+          "wiki": "Bucket",
+          "file": "BUCKET.jpg",
+          "name": "Bucket",
+          "facts": [
+            "A bucket holds water.",
+            "A bucket has a handle."
+          ]
+        },
+        {
+          "wiki": "Vacuum Cleaner",
+          "file": "Monozyklonstaubsauger.jpg",
+          "name": "Vacuum Cleaner",
+          "facts": [
+            "A vacuum cleaner cleans the carpet.",
+            "A vacuum cleaner is loud."
+          ]
+        },
+        {
+          "wiki": "Washing Machine",
+          "file": "Aqua Coin Laundry Machine at Inada Higashi-Osaka.jpg",
+          "name": "Washing Machine",
+          "facts": [
+            "A washing machine cleans our clothes.",
+            "Water and soap go inside."
+          ]
+        },
+        {
+          "wiki": "Clothes Dryer",
+          "file": "Modern front load tumble dryer.JPG",
+          "name": "Clothes Dryer",
+          "facts": [
+            "A clothes dryer dries our clothes.",
+            "A clothes dryer gets warm."
+          ]
+        },
+        {
+          "wiki": "Laundry Basket",
+          "file": "Clothes waiting to be washed.jpg",
+          "name": "Laundry Basket",
+          "facts": [
+            "A laundry basket holds dirty clothes.",
+            "We carry it to the washing machine."
+          ]
+        },
+        {
+          "wiki": "Iron",
+          "file": "Electric steam iron.jpg",
+          "name": "Iron",
+          "facts": [
+            "An iron makes clothes smooth.",
+            "An iron is very hot."
+          ]
+        },
+        {
+          "wiki": "Hanger",
+          "file": "Kleiderbügel Union Privat.jpg",
+          "name": "Hanger",
+          "facts": [
+            "We hang clothes on a hanger.",
+            "A hanger has a hook."
+          ]
+        },
+        {
+          "wiki": "Clothespin",
+          "file": "Clothespin-0157e3.jpg",
+          "name": "Clothespin",
+          "facts": [
+            "A clothespin holds wet clothes.",
+            "It pinches the clothes on the line."
+          ]
+        },
+        {
+          "wiki": "Flashlight",
+          "file": "LED Lenser T7.jpg",
+          "name": "Flashlight",
+          "facts": [
+            "A flashlight shines in the dark.",
+            "We push a button to turn it on."
+          ]
+        },
+        {
+          "wiki": "Light Bulb",
+          "file": "Electric bulb working in very low voltage.jpg",
+          "name": "Light Bulb",
+          "facts": [
+            "A light bulb gives light.",
+            "A light bulb is made of glass."
+          ]
+        },
+        {
+          "wiki": "Scissors",
+          "file": "Small pair of blue scissors.jpg",
+          "name": "Scissors",
+          "facts": [
+            "Scissors cut paper.",
+            "We hold scissors carefully."
+          ]
+        },
+        {
+          "wiki": "Hammer",
+          "file": "Claw hammer-1.jpg",
+          "name": "Hammer",
+          "facts": [
+            "A hammer hits nails.",
+            "A hammer is heavy."
+          ]
+        },
+        {
+          "wiki": "Backpack",
+          "file": "A school Bag.jpg",
+          "name": "Backpack",
+          "facts": [
+            "We carry things in a backpack.",
+            "A backpack goes on our back."
+          ]
+        },
+        {
+          "wiki": "Basket",
+          "file": "Eggs in basket 2020 G1.jpg",
+          "name": "Basket",
+          "facts": [
+            "A basket holds things.",
+            "A basket has a handle."
+          ]
+        },
+        {
+          "wiki": "Box",
+          "file": "Box, hat (AM 2015.51.30-1).jpg",
+          "name": "Box",
+          "facts": [
+            "We put things in a box.",
+            "A box has sides."
+          ]
+        },
+        {
+          "wiki": "Candle",
+          "file": "Pourquoi. Lit candle. (22590133777).jpg",
+          "name": "Candle",
+          "facts": [
+            "A candle has a flame.",
+            "A candle is hot, so grown-ups help."
+          ]
+        },
+        {
+          "wiki": "Book",
+          "file": "Gutenberg Bible, Lenox Copy, New York Public Library, 2009. Pic 01.jpg",
+          "name": "Book",
+          "facts": [
+            "We read a book.",
+            "A book has many pages."
+          ]
+        },
+        {
+          "wiki": "Pencil",
+          "file": "Tombow MONOR.jpg",
+          "name": "Pencil",
+          "facts": [
+            "We write with a pencil.",
+            "A pencil has a point."
+          ]
+        },
+        {
+          "wiki": "Pen",
+          "file": "Inoxcrom Wall Street. Ballpoint 3.jpg",
+          "name": "Pen",
+          "facts": [
+            "We write with a pen.",
+            "A pen uses ink."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "home-routines-1",
+      "category": "everyday-objects",
+      "subcategory": "home",
+      "title": "Things at Home",
+      "description": "Everyday objects from the kitchen, bathroom, bedroom and living room.",
+      "cards": [
+        {
+          "wiki": "Bowl",
+          "file": "Light_gray_ceramic_bowl_of_honey_cereals_(4268971800).jpg",
+          "name": "Bowl",
+          "facts": [
+            "We eat cereal from a bowl.",
+            "A bowl is round and deep."
+          ]
+        },
+        {
+          "wiki": "Tumbler (glass)",
+          "file": "No._193_Water_Tumbler,_1891_(CH_18732789).jpg",
+          "name": "Glass",
+          "facts": [
+            "We drink water from a glass.",
+            "We can see through a glass."
+          ]
+        },
+        {
+          "wiki": "Mug",
+          "file": "2003_Retford_King_Edward_VI_Grammar_School_closure_ceramic_mug_3.jpg",
+          "name": "Mug",
+          "facts": [
+            "We drink from a mug.",
+            "A mug has a handle."
+          ]
+        },
+        {
+          "wiki": "Kettle",
+          "file": "Electric_kettle_-_Электрический_чайник.JPG",
+          "name": "Kettle",
+          "facts": [
+            "A kettle heats water.",
+            "Hot water comes out of a kettle."
+          ]
+        },
+        {
+          "wiki": "Frying pan",
+          "file": "Frying_Pan_2_2019-03-21.jpg",
+          "name": "Frying Pan",
+          "facts": [
+            "We cook food in a frying pan.",
+            "A frying pan has a long handle."
+          ]
+        },
+        {
+          "wiki": "Whisk",
+          "file": "Whisk_(IMG_0265).jpg",
+          "name": "Whisk",
+          "facts": [
+            "We mix eggs with a whisk.",
+            "A whisk is made of thin wires."
+          ]
+        },
+        {
+          "wiki": "Refrigerator",
+          "file": "Open_refrigerator_with_food_at_night.jpg",
+          "name": "Refrigerator",
+          "facts": [
+            "A refrigerator keeps food cold.",
+            "A refrigerator has a big door."
+          ]
+        },
+        {
+          "wiki": "Dishwasher",
+          "file": "Hotpoint_Dishwasher_Model_HDA460-03AD,_IMG02.jpg",
+          "name": "Dishwasher",
+          "facts": [
+            "A dishwasher washes the dishes.",
+            "We put dirty dishes inside."
+          ]
+        },
+        {
+          "wiki": "Towel",
+          "file": "Steamy_hot_towel_served_to_passengers_on_long_haul_flights.JPG",
+          "name": "Towel",
+          "facts": [
+            "We dry our body with a towel.",
+            "A towel is soft."
+          ]
+        },
+        {
+          "wiki": "Toothbrush",
+          "file": "Electric_toothbrush_on_a_white_background.jpg",
+          "name": "Toothbrush",
+          "facts": [
+            "We brush our teeth with a toothbrush.",
+            "A toothbrush has a long handle."
+          ]
+        },
+        {
+          "wiki": "Sink",
+          "file": "Toilet_hand_wash_porcelain_basin_sink_and_faucet_tap_in_a_bathroom_in_a_small_hotel_in_Tysnes,_Hordaland,_Norway_2018-03-18_F.jpg",
+          "name": "Sink",
+          "facts": [
+            "We wash our hands in the sink.",
+            "Water comes out of the tap."
+          ]
+        },
+        {
+          "wiki": "Bathtub",
+          "file": "Bathtub_of_Khan_Pool_Suite_in_Amantaka_luxury_Resort_&_Hotel_in_Luang_Prabang_Laos.jpg",
+          "name": "Bathtub",
+          "facts": [
+            "We take a bath in the bathtub.",
+            "We fill the bathtub with water."
+          ]
+        },
+        {
+          "wiki": "Toilet",
+          "file": "Public_bathroom_toilet.jpg",
+          "name": "Toilet",
+          "facts": [
+            "We sit on the toilet.",
+            "We flush the toilet."
+          ]
+        },
+        {
+          "wiki": "Shower",
+          "file": "Dual-head_shower_-_Flickr_-_andrechinn.jpg",
+          "name": "Shower",
+          "facts": [
+            "We wash in the shower.",
+            "Water comes down from the shower."
+          ]
+        },
+        {
+          "wiki": "Sponge (tool)",
+          "file": "Sponge-viscose.jpg",
+          "name": "Sponge",
+          "facts": [
+            "We wash with a sponge.",
+            "A sponge is soft and has holes."
+          ]
+        },
+        {
+          "wiki": "Bed",
+          "file": "Handcrafted_custom_floating_walnut_bed.jpg",
+          "name": "Bed",
+          "facts": [
+            "We sleep in a bed.",
+            "A bed has a soft mattress."
+          ]
+        },
+        {
+          "wiki": "Blanket",
+          "file": "Grey_knitted_blanket.jpg",
+          "name": "Blanket",
+          "facts": [
+            "A blanket keeps us warm.",
+            "We sleep under a blanket."
+          ]
+        },
+        {
+          "wiki": "Infant bed",
+          "file": "Baby_Crib_(49935766018).jpg",
+          "name": "Crib",
+          "facts": [
+            "A baby sleeps in a crib.",
+            "A crib has bars on the sides."
+          ]
+        },
+        {
+          "wiki": "Clock",
+          "file": "Analog_clock._(14169066157).jpg",
+          "name": "Clock",
+          "facts": [
+            "A clock tells us the time.",
+            "A clock has numbers."
+          ]
+        },
+        {
+          "wiki": "Lamp",
+          "file": "ORGEL_table_lamp.jpg",
+          "name": "Lamp",
+          "facts": [
+            "A lamp gives us light.",
+            "We turn on a lamp at night."
+          ]
+        },
+        {
+          "wiki": "Couch",
+          "file": "Sofá.jpg",
+          "name": "Sofa",
+          "facts": [
+            "We sit on the sofa.",
+            "A sofa has soft cushions."
+          ]
+        },
+        {
+          "wiki": "Stool (seat)",
+          "file": "Vintage_wooden_farmers_stool._Tegernsee,_Bavaria,_Germany.jpeg",
+          "name": "Stool",
+          "facts": [
+            "We sit on a stool.",
+            "A stool has no back."
+          ]
+        },
+        {
+          "wiki": "Light switch",
+          "file": "Rocker_light_switch.jpg",
+          "name": "Light Switch",
+          "facts": [
+            "A light switch turns on the light.",
+            "We press a light switch."
+          ]
+        },
+        {
+          "wiki": "Remote control",
+          "file": "Television_remote_control_-_unbranded-4028.jpg",
+          "name": "Remote Control",
+          "facts": [
+            "We use a remote control for the TV.",
+            "A remote control has many buttons."
+          ]
+        },
+        {
+          "wiki": "Shirt",
+          "file": "Camisade_puño_doble.jpg",
+          "name": "Shirt",
+          "facts": [
+            "We wear a shirt on our body.",
+            "This shirt has buttons."
+          ]
+        },
+        {
+          "wiki": "Sock",
+          "file": "Kauskaki_SMA_Trinitas_Bandung_Pink_Baru_Pink_Lama.JPG",
+          "name": "Sock",
+          "facts": [
+            "A sock goes on a foot.",
+            "A sock keeps a foot warm."
+          ]
+        },
+        {
+          "wiki": "Shoe",
+          "file": "Shoe-Norway-Cotto.jpg",
+          "name": "Shoe",
+          "facts": [
+            "A shoe goes on a foot.",
+            "We tie the laces on a shoe."
+          ]
+        },
+        {
+          "wiki": "Clothespin",
+          "file": "Clothespin-0157e3.jpg",
+          "name": "Clothespin",
+          "facts": [
+            "A clothespin holds clothes on a line.",
+            "This clothespin is made of wood."
+          ]
+        },
+        {
+          "wiki": "Clothes dryer",
+          "file": "Modern_front_load_tumble_dryer.JPG",
+          "name": "Clothes Dryer",
+          "facts": [
+            "A clothes dryer dries wet clothes.",
+            "Clothes spin inside a clothes dryer."
+          ]
+        },
+        {
+          "wiki": "Dustpan",
+          "file": "Shovelilo.jpg",
+          "name": "Dustpan",
+          "facts": [
+            "We sweep dirt into a dustpan.",
+            "A dustpan has a short handle."
+          ]
+        },
+        {
+          "wiki": "Plunger",
+          "file": "Plunger_(13749016464).jpg",
+          "name": "Plunger",
+          "facts": [
+            "A plunger helps fix a blocked toilet.",
+            "A plunger has a rubber cup."
+          ]
+        },
+        {
+          "wiki": "Hammer",
+          "file": "Magnum_25116_claw_hammer.jpg",
+          "name": "Hammer",
+          "facts": [
+            "A hammer hits nails.",
+            "A hammer has a handle."
+          ]
+        },
+        {
+          "wiki": "Pen",
+          "file": "Inoxcrom_Wall_Street._Ballpoint_3.jpg",
+          "name": "Pen",
+          "facts": [
+            "We write with a pen.",
+            "A pen has ink inside."
+          ]
+        },
+        {
+          "wiki": "Candle",
+          "file": "Pourquoi._Lit_candle._(22590133777).jpg",
+          "name": "Candle",
+          "facts": [
+            "A candle gives light.",
+            "A grown-up lights a candle."
+          ]
+        }
+      ]
     }
   ],
   "books": [
@@ -696,6 +1853,70 @@
       "pack": "vehicles-1",
       "title": "On the Go",
       "stage": 2,
+      "cards": 8,
+      "offset": 0
+    },
+    {
+      "key": "home-kitchen-book",
+      "pack": "home-routines-1",
+      "title": "In the Kitchen",
+      "stage": 1,
+      "cards": 8,
+      "offset": 0
+    },
+    {
+      "key": "home-clean-book",
+      "pack": "home-routines-1",
+      "title": "Time to Get Clean",
+      "stage": 1,
+      "cards": 7,
+      "offset": 8
+    },
+    {
+      "key": "home-bed-book",
+      "pack": "home-routines-1",
+      "title": "Time for Bed",
+      "stage": 1,
+      "cards": 5,
+      "offset": 15
+    },
+    {
+      "key": "home-living-book",
+      "pack": "home-routines-1",
+      "title": "In the Living Room",
+      "stage": 1,
+      "cards": 6,
+      "offset": 18
+    },
+    {
+      "key": "home-clothes-book",
+      "pack": "home-routines-1",
+      "title": "Our Clothes",
+      "stage": 1,
+      "cards": 5,
+      "offset": 24
+    },
+    {
+      "key": "home-things-book",
+      "pack": "home-routines-1",
+      "title": "Things We Use",
+      "stage": 1,
+      "cards": 5,
+      "offset": 29
+    },
+    {
+      "key": "home-book-eat",
+      "pack": "home-kitchen-1",
+      "title": "Time to Eat",
+      "stage": 1,
+      "cards": 8,
+      "offset": 0
+    },
+    {
+      "key": "home-book-house",
+      "pack": "home-furniture-1",
+      "title": "In Our House",
+      "stage": 1,
       "cards": 8,
       "offset": 0
     }

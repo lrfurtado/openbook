@@ -2,7 +2,7 @@
 // Suggests compliant Commons files (JPEG, ≥2000 px long edge, PD/CC license) for cards, preferring
 // Commons "Quality images". Usage: node apps/api/scripts/find-images.mjs "Emperor penguin" "Cello" ...
 const UA = 'OpenBookContentBot/0.1 (content seeding)';
-const ALLOWED = /^(public domain|pd|cc0|cc[- ]by(?:[- ]sa)?(?:[- ]\d\.\d)?)/i;
+const ALLOWED = /^(public domain|pd|cc0|cc[- ]by(?:[- ]sa)?(?:[- ]\d\.\d)?)(?![- ]n[cd])/i;
 
 async function api(params) {
   const url = 'https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({ format: 'json', formatversion: '2', ...params });

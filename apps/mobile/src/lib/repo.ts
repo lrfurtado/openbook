@@ -1,6 +1,7 @@
 import {
   createNextSet,
   DEFAULT_CHILD_SETTINGS,
+  withDefaultSettings,
   finalizeBook,
   localDate,
   pickRendition,
@@ -57,8 +58,13 @@ export function deviceRendition(renditions: readonly Rendition[]): Rendition | u
 
 // ---- Children ----
 
-export const listChildren = () => listDocs<ChildProfile>('child');
-export const getChild = (id: ID) => getDoc<ChildProfile>('child', id);
+const withCurrentSettings = (child: ChildProfile): ChildProfile => ({ ...child, settings: withDefaultSettings(child.settings) });
+
+export const listChildren = async () => (await listDocs<ChildProfile>('child')).map(withCurrentSettings);
+export const getChild = async (id: ID) => {
+  const child = await getDoc<ChildProfile>('child', id);
+  return child ? withCurrentSettings(child) : child;
+};
 export const saveChild = (child: ChildProfile) => putDoc('child', { ...child, updatedAt: nowIso() });
 
 export async function createChild(nickname: string, avatar: string, birthMonth?: string): Promise<ChildProfile> {
@@ -164,7 +170,7 @@ export async function removePack(packId: ID): Promise<void> {
 
 /** FR-8/9: a user card from an already resized local image. */
 export async function saveUserCard(
-  input: { id?: ID; name: string; facts: string[]; imageUri?: string; width?: number; height?: number },
+  input: { id?: ID; name: string; facts: string[]; imageUri?: string; width?: number; height?: number; readAloud?: boolean },
 ): Promise<Card> {
   const id = input.id ?? newId();
   const existing = input.id ? await getCard(input.id) : null;
@@ -181,6 +187,7 @@ export async function saveUserCard(
       .map((t, i) => ({ level: (i + 1) as 1 | 2 | 3, text: { en: t.trim() } }))
       .filter((f) => f.text.en),
     image,
+    readAloud: input.readAloud ?? existing?.readAloud,
     updatedAt: nowIso(),
   };
   return putDoc('card', card, { parentId: 'user' });

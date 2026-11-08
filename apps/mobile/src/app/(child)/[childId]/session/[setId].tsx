@@ -5,8 +5,10 @@ import {
   CROSSFADE_MS,
   END_CARD_MS,
   isCompleted,
+  loc,
   NAME_RED,
   pickFact,
+  selectNarration,
   type Card,
   type CardProgress,
   type ChildProfile,
@@ -19,6 +21,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Animated, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { ExitCorner, PauseOverlay, RotateHint } from '@/components/Immersive';
+import { narrator } from '@/features/narration';
 import { preloadImages } from '@/features/preload';
 import { useAdvanceInput, useImmersive } from '@/hooks/useImmersive';
 import { newId, nowIso } from '@/lib/ids';
@@ -60,6 +63,7 @@ export default function Session() {
   useEffect(() => {
     let alive = true;
     (async () => {
+      void narrator.voice();
       const [ch, set] = await Promise.all([getChild(childId), getSet(setId)]);
       if (!ch || !set) return alive && setPhase('empty');
       const progress = new Map((await listProgress(childId)).map((p) => [p.cardId, p]));
@@ -135,12 +139,39 @@ export default function Session() {
     } else finish(true);
   }, [phase, twoBeats, beat, index, slides.length, finish]);
 
-  // Auto-advance; any manual advance changes index/beat and so resets this timer (FR-24).
+  // Advances once the time is up and any device voice has finished (FR-85, FR-86). A manual advance or a
+  // pause re-runs this, which stops speech and resets the timer (FR-24, FR-90).
   useEffect(() => {
     if (phase !== 'running' || !child) return;
-    const timer = setTimeout(advance, cardHoldMs(child.settings.secondsPerCard));
-    return () => clearTimeout(timer);
-  }, [phase, index, beat, child, advance]);
+    const card = slides[index]?.card;
+    // Parent recordings are not built yet (M4), so a card never has one here.
+    const spoken =
+      card && (!twoBeats || beat === 1) && selectNarration(child.settings, 'cards', { hasRecording: false, readAloud: card.readAloud }) === 'device'
+        ? loc(card.name)
+        : null;
+    let timeUp = false;
+    let speechOver = spoken === null;
+    const proceed = () => {
+      if (timeUp && speechOver) advance();
+    };
+    const timer = setTimeout(() => {
+      timeUp = true;
+      proceed();
+    }, cardHoldMs(child.settings.secondsPerCard));
+    const cancelSpeech =
+      spoken === null
+        ? undefined
+        : narrator.speak(spoken, {
+            onFinished: () => {
+              speechOver = true;
+              proceed();
+            },
+          });
+    return () => {
+      clearTimeout(timer);
+      cancelSpeech?.();
+    };
+  }, [phase, index, beat, child, advance, slides, twoBeats]);
 
   const pan = useAdvanceInput(advance);
 

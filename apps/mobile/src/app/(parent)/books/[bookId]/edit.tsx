@@ -136,7 +136,10 @@ function Editor({ initial, known }: { initial: Book; known: Known }) {
         ]}
       />
       <Section>
-        <ToggleRow label={t('editor.endPage')} value={draft.showEndPage} onChange={(v) => set({ showEndPage: v })} last />
+        <ToggleRow label={t('editor.endPage')} value={draft.showEndPage} onChange={(v) => set({ showEndPage: v })} last={draft.source === 'official'} />
+        {draft.source !== 'official' && (
+          <ToggleRow label={t('editor.readAloud')} value={draft.readAloud !== false} onChange={(v) => set({ readAloud: v })} last />
+        )}
       </Section>
       {issues.some((i) => i.pageIndex === null) && <Notice>{t('editor.tooManyPages', { max: rule.maxPages })}</Notice>}
       {draft.pages.map((p, i) => {

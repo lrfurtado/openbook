@@ -90,6 +90,7 @@ const en = {
     theEnd: 'The End',
     next: 'Next page',
     previous: 'Previous page',
+    replay: 'Read this page again',
   },
   bookshelf: {
     title: 'Bookshelf',
@@ -167,6 +168,7 @@ const en = {
   cardEditor: {
     newTitle: 'New card',
     tip: 'Tip: one subject, filling the frame, on a plain background works best.',
+    readAloud: 'Read this card aloud',
     camera: 'Take photo',
     library: 'Choose photo',
     replace: 'Replace photo',
@@ -217,6 +219,11 @@ const en = {
     },
   },
   settings: {
+    readAloud: 'Read aloud',
+    readAloudCards: 'Read cards aloud',
+    readAloudBooks: 'Read books aloud',
+    noVoice: 'No voice is available on this device, so nothing will be read aloud.',
+    iosSilent: 'On an iPhone, turn off silent mode to hear the voice.',
     flash: 'Flash cards',
     nameDisplay: 'Show the name',
     nameHidden: 'Hidden',
@@ -323,6 +330,7 @@ const en = {
     title: 'Edit book',
     stageRule: 'Up to {{words}} words per page and {{pages}} pages.',
     endPage: '"The End" page',
+    readAloud: 'Read this book aloud',
     tooManyPages: 'This stage allows {{max}} pages.',
     page: 'Page {{n}}',
     moveUp: 'Move page up',

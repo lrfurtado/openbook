@@ -62,6 +62,8 @@ export interface Card {
   facts: CardFact[];
   image: CardImage;
   attribution?: Attribution;
+  /** User cards only: false silences the device voice for this card (FR-84). */
+  readAloud?: boolean;
   updatedAt: ISODateTime;
   deletedAt?: ISODateTime;
 }
@@ -83,7 +85,9 @@ export interface ChildSettings {
   factCaption: boolean;
   sessionSize: number; // 5..20
   secondsPerCard: number; // 0.5..30
-  audio: boolean;
+  audio: boolean; // parent recordings
+  readAloudCards: boolean; // device voice for cards
+  readAloudBooks: boolean; // device voice for books
   daysPerSet: number; // 1..10
   sessionsPerDay: number;
   maxActiveSets: number; // 1..5
@@ -178,6 +182,8 @@ export interface Book {
   generatedFrom?: { sourceType: SourceType; sourceId: ID; cardIds: ID[] };
   templateKey?: string;
   showEndPage: boolean;
+  /** Homemade and generated books only: false silences the device voice for this book (FR-84). */
+  readAloud?: boolean;
   version: number;
   status?: PublishStatus;
   containsPrivatePhotos: boolean;

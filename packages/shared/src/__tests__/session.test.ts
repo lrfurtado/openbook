@@ -1,5 +1,5 @@
 import { buildSessionOrder, cardHoldMs, fisherYates, isCompleted, pickFact } from '../session';
-import { pickRendition, validatePack, canTransition } from '../catalog';
+import { isAllowedLicense, pickRendition, validatePack, canTransition } from '../catalog';
 import { uuidv7, addDays } from '../util';
 
 function seeded(seed: number) {
@@ -91,5 +91,15 @@ describe('util', () => {
   it('adds days across month boundaries', () => {
     expect(addDays('2026-02-28', 1)).toBe('2026-03-01');
     expect(addDays('2026-03-01', -1)).toBe('2026-02-28');
+  });
+});
+
+describe('isAllowedLicense (FR-12)', () => {
+  it.each(['Public domain', 'CC0', 'CC BY 2.0', 'CC BY-SA 4.0', 'CC BY-SA 2.0 de'])('allows %s', (license) => {
+    expect(isAllowedLicense(license)).toBe(true);
+  });
+
+  it.each(['CC BY-NC 4.0', 'CC BY-ND 2.0', 'CC BY-NC-SA 3.0', 'All rights reserved'])('rejects %s', (license) => {
+    expect(isAllowedLicense(license)).toBe(false);
   });
 });

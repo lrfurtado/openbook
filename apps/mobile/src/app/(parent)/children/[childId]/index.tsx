@@ -11,11 +11,13 @@ import {
   type ChildSettings,
 } from '@openbook/shared';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Platform, Text, View } from 'react-native';
 import { useTheme } from '@/components/theme';
-import { Body, Button, DraftField, Loading, Row, Screen, Section, Segmented, Stepper, ToggleRow } from '@/components/ui';
+import { Body, Button, DraftField, Loading, Notice, Row, Screen, Section, Segmented, Stepper, ToggleRow } from '@/components/ui';
 import { useLiveQuery } from '@/hooks/useLiveQuery';
+import { narrator } from '@/features/narration';
 import { confirm } from '@/lib/confirm';
 import { scheduleReminders } from '@/lib/reminders';
 import {
@@ -61,6 +63,27 @@ const TIME_RE = /^([01]\d|2[0-3]):[0-5]\d$/;
 
 /** Time per card: quarter seconds up to 3 s, whole seconds above. */
 const speedStep = (v: number, d: 1 | -1) => ((d > 0 ? v >= 3 : v > 3) ? 1 : 0.25);
+
+/** FR-83: the device voice switches, with a note when this device cannot use them. */
+function ReadAloudSettings({ settings, update }: { settings: ChildSettings; update: (patch: Partial<ChildSettings>) => void }) {
+  const { t } = useTranslation();
+  const [noVoice, setNoVoice] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    void narrator.voice().then((id) => alive && setNoVoice(id === null));
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return (
+    <Section title={t('settings.readAloud')}>
+      <ToggleRow label={t('settings.readAloudCards')} value={settings.readAloudCards} onChange={(v) => update({ readAloudCards: v })} />
+      <ToggleRow label={t('settings.readAloudBooks')} value={settings.readAloudBooks} onChange={(v) => update({ readAloudBooks: v })} last />
+      {noVoice && <Notice>{t('settings.noVoice')}</Notice>}
+      {Platform.OS === 'ios' && <Notice tone="info">{t('settings.iosSilent')}</Notice>}
+    </Section>
+  );
+}
 
 /** FR-41 settings plus the child's Program: active / retired sets and books (FR-32..39, FR-71). */
 export default function ChildDetail() {
@@ -150,6 +173,8 @@ export default function ChildDetail() {
         )}
         <Row title={`＋ ${t('program.addBook')}`} onPress={() => router.push('/books')} last />
       </Section>
+
+      <ReadAloudSettings settings={s} update={update} />
 
       <Section title={t('settings.flash')}>
         <View style={{ padding: 12, gap: 8 }}>

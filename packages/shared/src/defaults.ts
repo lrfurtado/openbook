@@ -10,6 +10,8 @@ export const DEFAULT_CHILD_SETTINGS: ChildSettings = {
   sessionSize: 10,
   secondsPerCard: 10,
   audio: true,
+  readAloudCards: true,
+  readAloudBooks: true,
   daysPerSet: 5,
   sessionsPerDay: 3,
   maxActiveSets: 3,
@@ -21,6 +23,11 @@ export const DEFAULT_CHILD_SETTINGS: ChildSettings = {
   maxActiveBooks: 2,
   pageAutoAdvanceSeconds: null,
 };
+
+/** Fills in settings added since a profile was saved (FR-83). */
+export function withDefaultSettings(settings: ChildSettings): ChildSettings {
+  return { ...DEFAULT_CHILD_SETTINGS, ...settings };
+}
 
 export const SETTING_LIMITS = {
   sessionSize: { min: 5, max: 20 },
@@ -38,6 +45,12 @@ export const SETTING_LIMITS = {
 export const COMPLETION_RATIO = 0.8;
 /** FR-24: voice clips may hold a card for at most 3 s. */
 export const MAX_CLIP_HOLD_MS = 3000;
+/** §9.5: the safety timeout for a voice that never reports finishing. */
+export const SPEECH_SAFETY_BASE_MS = 2000;
+export const SPEECH_SAFETY_PER_CHAR_MS = 200;
+/** FR-80: how long to wait for the device's voice list, and before looking again after finding none. */
+export const VOICE_LIST_LIMIT_MS = 3000;
+export const NO_VOICE_RETRY_MS = 30_000;
 /** FR-30: long-press duration to exit a session. */
 export const EXIT_LONG_PRESS_MS = 1000;
 export const CROSSFADE_MS = 150;

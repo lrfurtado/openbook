@@ -9,7 +9,7 @@ import path from 'node:path';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const UA = 'OpenBookContentBot/0.1 (https://github.com/openbook; content seeding)';
-const ALLOWED = /^(public domain|pd|cc0|cc[- ]by(?:[- ]sa)?(?:[- ]\d\.\d)?)/i;
+const ALLOWED = /^(public domain|pd|cc0|cc[- ]by(?:[- ]sa)?(?:[- ]\d\.\d)?)(?![- ]n[cd])/i;
 // Wikimedia only serves standard thumbnail widths; map them onto our rendition classes (NFR-3).
 const BUCKETS = [
   { size: 1024, px: 1280 },

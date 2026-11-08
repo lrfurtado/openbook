@@ -14,7 +14,7 @@ export function canTransition(from: PublishStatus, to: PublishStatus): boolean {
 
 export const MIN_PACK_CARDS = 20;
 export const MIN_IMAGE_LONG_EDGE = 1600;
-const ALLOWED_LICENSE = /^(public domain|pd|cc0|cc[- ]by(?:[- ]sa)?(?:[- ]\d\.\d)?)/i;
+const ALLOWED_LICENSE = /^(public domain|pd|cc0|cc[- ]by(?:[- ]sa)?(?:[- ]\d\.\d)?)(?![- ]n[cd])/i;
 
 export function isAllowedLicense(license: string): boolean {
   return ALLOWED_LICENSE.test(license.trim());

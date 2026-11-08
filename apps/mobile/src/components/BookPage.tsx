@@ -1,4 +1,4 @@
-import { fitText, LETTER_SPACING_EM, LINE_HEIGHT, loc, stageColor, type Book, type ReaderPage } from '@openbook/shared';
+import { displayWords, fitText, LETTER_SPACING_EM, LINE_HEIGHT, loc, stageColor, type Book, type ReaderPage } from '@openbook/shared';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, Text, View } from 'react-native';
 import { MediaImage } from './CardImage';
@@ -11,6 +11,7 @@ export function BookText({
   width,
   height,
   highlighted,
+  spokenWord,
   onWordPress,
 }: {
   text: string;
@@ -18,10 +19,11 @@ export function BookText({
   width: number;
   height: number;
   highlighted?: ReadonlySet<number>;
+  spokenWord?: number | null;
   onWordPress?: (i: number) => void;
 }) {
   const fit = fitText(text, width, height, stage);
-  const words = text.split(/\s+/).filter(Boolean);
+  const words = displayWords(text);
   return (
     <View style={[styles.textWrap, { width, height }]}>
       <Text
@@ -39,7 +41,7 @@ export function BookText({
           <Text key={i}>
             <Text
               onPress={onWordPress ? () => onWordPress(i) : undefined}
-              style={highlighted?.has(i) ? styles.highlight : undefined}
+              style={[highlighted?.has(i) && styles.highlight, spokenWord === i && styles.spoken]}
               suppressHighlighting
             >
               {w}
@@ -58,6 +60,7 @@ export function BookPageView({
   width,
   height,
   highlighted,
+  spokenWord,
   onWordPress,
 }: {
   book: Book;
@@ -65,10 +68,11 @@ export function BookPageView({
   width: number;
   height: number;
   highlighted?: ReadonlySet<number>;
+  spokenWord?: number | null;
   onWordPress?: (i: number) => void;
 }) {
   const { t } = useTranslation();
-  const common = { stage: book.stage, highlighted, onWordPress };
+  const common = { stage: book.stage, highlighted, spokenWord, onWordPress };
   switch (page.kind) {
     case 'cover':
       return <BookText text={loc(book.title)} width={width} height={height} {...common} />;
@@ -107,4 +111,5 @@ export function BookPageView({
 const styles = StyleSheet.create({
   textWrap: { alignItems: 'center', justifyContent: 'center', backgroundColor: '#FFFFFF' },
   highlight: { backgroundColor: '#FFF176' },
+  spoken: { backgroundColor: '#BBDEFB' },
 });

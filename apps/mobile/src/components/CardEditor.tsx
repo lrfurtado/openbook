@@ -6,7 +6,7 @@ import { Platform, StyleSheet, View } from 'react-native';
 import { pickPhoto, type PickedPhoto } from '@/features/photos';
 import { saveUserCard } from '@/lib/repo';
 import { MediaImage } from './CardImage';
-import { Body, Button, Field, Notice } from './ui';
+import { Body, Button, Field, Notice, Section, ToggleRow } from './ui';
 
 /** FR-8: photo → crop → name (required) → facts L1–L3 (optional). */
 export function CardEditor({ card, onSaved }: { card?: Card; onSaved: (card: Card) => void }) {
@@ -14,6 +14,7 @@ export function CardEditor({ card, onSaved }: { card?: Card; onSaved: (card: Car
   const [photo, setPhoto] = useState<PickedPhoto | null>(null);
   const [name, setName] = useState(card?.name.en ?? '');
   const [facts, setFacts] = useState<string[]>([1, 2, 3].map((l) => card?.facts.find((f) => f.level === l)?.text.en ?? ''));
+  const [readAloud, setReadAloud] = useState(card?.readAloud !== false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -53,6 +54,9 @@ export function CardEditor({ card, onSaved }: { card?: Card; onSaved: (card: Car
           multiline
         />
       ))}
+      <Section>
+        <ToggleRow label={t('cardEditor.readAloud')} value={readAloud} onChange={setReadAloud} last />
+      </Section>
       <Button
         title={t('common.save')}
         disabled={!name.trim() || !hasImage}
@@ -67,6 +71,7 @@ export function CardEditor({ card, onSaved }: { card?: Card; onSaved: (card: Car
               imageUri: photo?.uri,
               width: photo?.width,
               height: photo?.height,
+              readAloud,
             });
             onSaved(saved);
           } catch (e) {

@@ -323,7 +323,7 @@ before a parent has recorded anything.
   stores speech, and no audio is downloaded.
 - FR-80: **Offline and privacy:** only voices that run on the device may be used, so reading works with no
   network and text never leaves the device (NFR-1, NFR-7). On web this means `localService` voices only. On
-  native, the M4.6 platform check sets the rule. If a device has no eligible voice, content stays silent and
+  Android, voices with `network` in their identifier are excluded; iOS voices run on the device. If a device has no eligible voice, content stays silent and
   the child's settings show that no voice is available.
 - FR-81: **One voice:** the best installed English voice at normal speed, chosen per device and not synced.
   Parents cannot change the voice or the speed in v1, and there are no pronunciation overrides.
@@ -714,8 +714,8 @@ for each active set:
    `onDone`, `onStopped` or `onError` arrives by then, treat speech as finished. It is far longer than normal
    speech, so it only acts on a failure. `onError` is not documented for web, so the timeout is what protects
    web sessions from hanging.
-5. **Highlighting:** map each `onBoundary` `charIndex` to a word index using the same segmentation as
-   `tokenize`, and clear the highlight when speech ends.
+5. **Highlighting:** map each `onBoundary` `charIndex` to a word index using the whitespace-separated words
+   the reader displays (not `tokenize`, which splits differently), and clear the highlight when speech ends.
 
 ---
 
@@ -800,14 +800,25 @@ Android, desktop Chrome and Safari. Record the results here, since they settle t
 - Whether web browsers allow speech on later cards and pages, after the one tap that started the session.
 - Whether `onDone` fires reliably, including for the longest book page allowed.
 
+Findings so far, from the `expo-speech` 58.0.3 source and headless Chrome (a browser with no voices). The
+device runs above have not been done: Steps 1-5 were built assuming they would pass, so the Android voice
+rule, AC-16 and word highlighting on real devices remain unconfirmed:
+- `getAvailableVoicesAsync()` never settles on web if the browser has no voices, so the Narrator must put a
+  time limit on it and treat expiry as "no eligible voice" (FR-80).
+- On web, a `voice` identifier that is not found silently falls back to the browser's first voice, which may
+  be remote, and leaving `voice` unset uses the browser's default. The Narrator must always pass an identifier
+  it has confirmed is `localService`, and must not speak on web without one.
+- With no voices, `speak()` calls `onError` within a few milliseconds on web, with an empty message.
+
 **Step 1: Shared logic and settings** (`packages/shared`). Add `readAloudCards` and `readAloudBooks` to
 `ChildSettings` and its defaults; `readAloud` to `Card` and `Book`; and pure functions for FR-82 source
 selection, `speechSafetyMs` and `wordIndexAt`, with unit tests. Merge stored settings over the defaults when
 loading a child in `apps/mobile/src/lib/repo.ts`, since settings are stored as JSON and existing profiles
 will not have the new fields.
 
-**Step 2: Narrator** (`apps/mobile/src/features/narration/`). One interface over `expo-speech`: `speak`,
-`stop`, voice selection, utterance tokens and the safety timeout, with the parent-recording branch stubbed.
+**Step 2: Narrator** (`createNarrator` in `packages/shared/src/narration.ts`, wired to `expo-speech` in
+`apps/mobile/src/features/narration.ts`). Speech, voice selection, utterance tokens and the safety timeout,
+with no recording playback until parent recording is built.
 
 **Step 3: Cards (first release).** Speak on card and name beat in
 `apps/mobile/src/app/(child)/[childId]/session/[setId].tsx`, replace the fixed auto-advance timer with the
