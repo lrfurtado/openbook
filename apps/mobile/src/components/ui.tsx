@@ -161,24 +161,26 @@ export function Stepper({
   value: number;
   min: number;
   max: number;
-  step?: number;
+  /** A fixed step, or one chosen from the current value and direction (e.g. finer at small values). */
+  step?: number | ((value: number, direction: 1 | -1) => number);
   format?: (v: number) => string;
   onChange: (v: number) => void;
   last?: boolean;
 }) {
   const t = useTheme();
   const set = (v: number) => onChange(Math.round(Math.min(max, Math.max(min, v)) * 100) / 100);
+  const by = (d: 1 | -1) => (typeof step === 'function' ? step(value, d) : step) * d;
   return (
     <Row
       title={label}
       last={last}
       right={
         <View style={styles.stepper} accessibilityRole="adjustable" accessibilityLabel={label} accessibilityValue={{ text: format(value) }}>
-          <Pressable accessibilityLabel={`Decrease ${label}`} style={[styles.stepBtn, { borderColor: t.border }]} disabled={value <= min} onPress={() => set(value - step)}>
+          <Pressable accessibilityLabel={`Decrease ${label}`} style={[styles.stepBtn, { borderColor: t.border }]} disabled={value <= min} onPress={() => set(value + by(-1))}>
             <Text style={[styles.stepTxt, { color: value <= min ? t.border : t.text }]}>−</Text>
           </Pressable>
           <Text style={[styles.stepValue, { color: t.text }]}>{format(value)}</Text>
-          <Pressable accessibilityLabel={`Increase ${label}`} style={[styles.stepBtn, { borderColor: t.border }]} disabled={value >= max} onPress={() => set(value + step)}>
+          <Pressable accessibilityLabel={`Increase ${label}`} style={[styles.stepBtn, { borderColor: t.border }]} disabled={value >= max} onPress={() => set(value + by(1))}>
             <Text style={[styles.stepTxt, { color: value >= max ? t.border : t.text }]}>+</Text>
           </Pressable>
         </View>

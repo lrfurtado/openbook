@@ -82,7 +82,7 @@ export interface ChildSettings {
   nameDisplay: NameDisplay;
   factCaption: boolean;
   sessionSize: number; // 5..20
-  secondsPerCard: number; // 0.5..3
+  secondsPerCard: number; // 0.5..30
   audio: boolean;
   daysPerSet: number; // 1..10
   sessionsPerDay: number;

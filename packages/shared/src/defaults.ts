@@ -8,7 +8,7 @@ export const DEFAULT_CHILD_SETTINGS: ChildSettings = {
   nameDisplay: 'hidden',
   factCaption: true,
   sessionSize: 10,
-  secondsPerCard: 1,
+  secondsPerCard: 10,
   audio: true,
   daysPerSet: 5,
   sessionsPerDay: 3,
@@ -24,7 +24,7 @@ export const DEFAULT_CHILD_SETTINGS: ChildSettings = {
 
 export const SETTING_LIMITS = {
   sessionSize: { min: 5, max: 20 },
-  secondsPerCard: { min: 0.5, max: 3 },
+  secondsPerCard: { min: 0.5, max: 30 },
   daysPerSet: { min: 1, max: 10 },
   sessionsPerDay: { min: 1, max: 5 },
   maxActiveSets: { min: 1, max: 5 },

@@ -59,6 +59,9 @@ async function load(childId: string) {
 
 const TIME_RE = /^([01]\d|2[0-3]):[0-5]\d$/;
 
+/** Time per card: quarter seconds up to 3 s, whole seconds above. */
+const speedStep = (v: number, d: 1 | -1) => ((d > 0 ? v >= 3 : v > 3) ? 1 : 0.25);
+
 /** FR-41 settings plus the child's Program: active / retired sets and books (FR-32..39, FR-71). */
 export default function ChildDetail() {
   const { t } = useTranslation();
@@ -163,7 +166,7 @@ export default function ChildDetail() {
         </View>
         <ToggleRow label={t('settings.factCaption')} value={s.factCaption} onChange={(v) => update({ factCaption: v })} />
         <Stepper label={t('settings.sessionSize')} value={s.sessionSize} {...L.sessionSize} onChange={(v) => update({ sessionSize: v })} />
-        <Stepper label={t('settings.speed')} value={s.secondsPerCard} {...L.secondsPerCard} step={0.25} format={(v) => `${v} s`} onChange={(v) => update({ secondsPerCard: v })} />
+        <Stepper label={t('settings.speed')} value={s.secondsPerCard} {...L.secondsPerCard} step={speedStep} format={(v) => `${v} s`} onChange={(v) => update({ secondsPerCard: v })} />
         <Stepper label={t('settings.daysPerSet')} value={s.daysPerSet} {...L.daysPerSet} onChange={(v) => update({ daysPerSet: v })} />
         <Stepper label={t('settings.sessionsPerDay')} value={s.sessionsPerDay} {...L.sessionsPerDay} onChange={(v) => update({ sessionsPerDay: v })} />
         <Stepper label={t('settings.maxActiveSets')} value={s.maxActiveSets} {...L.maxActiveSets} onChange={(v) => update({ maxActiveSets: v })} last />

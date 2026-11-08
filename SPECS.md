@@ -163,7 +163,7 @@ private deck sharing and an admin CMS. It is free with no ads, and it collects n
   only if the parent explicitly opts in.
 
 ### 4.6 Session Mode (Flashing)
-- FR-24: **Advancing:** auto-advance with speed adjustable from **0.5 s to 3 s per card (default 1 s)**, plus
+- FR-24: **Advancing:** auto-advance with speed adjustable from **0.5 s to 30 s per card (default 10 s)**, plus
   **tap / swipe / arrow key / space** to advance manually. Manual input resets the auto timer.
   - When a voice recording is longer than the interval, auto-advance waits for the clip to finish, up to 3 s.
 - FR-25: **Session size** comes from the profile setting (5–20, default 10) and is capped by the size of the
